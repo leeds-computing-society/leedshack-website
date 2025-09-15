@@ -2,61 +2,61 @@
     {
         "image": "/committee/miranda-gough.jpg",
         "name": "Miranda Gough",
-        "role": "President",
-        "roleDescription": "Chairs the committee, coordinates the society's activities, and communicates with sponsors and the School of Computing."
+        "role": "President - Leeds Computing Society",
+        "roleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit tempor ipsum, non interdum lectus vestibulum quis. Sed interdum lacinia sapien eu semper."
     },
     {
         "image": "/committee/eschal-najmi.jpg",
         "name": "Eschal Najmi",
-        "role": "Treasurer",
-        "roleDescription": "Manages the budget and finances of the society, and ensures that events are fully funded and run smoothly."
+        "role": "Treasurer - Leeds Computing Society",
+        "roleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit tempor ipsum, non interdum lectus vestibulum quis. Sed interdum lacinia sapien eu semper."
     },
     {
         "image": "/committee/paige-uppal.jpg",
         "name": "Paige Uppal",
-        "role": "Secretary",
-        "roleDescription": "Organises the day-to-day running of the committee, manages tasks, and leads admininstrative activities."
-    },
-    {
-        "image": "/committee/shay-odonnell.jpg",
-        "name": "Shay O'Donnell",
-        "role": "Social Secretary",
-        "roleDescription": "Organises and runs social events for members such as pub quizzes, fridge-to-fridges, and the famous annual Summer Ball."
-    },
-    {
-        "image": "/committee/alex-mccall.jpg",
-        "name": "Alex McCall",
-        "role": "Social Secretary",
-        "roleDescription": "Organises and runs social events for members such as pub quizzes, fridge-to-fridges, and the famous annual Summer Ball."
-    },
-    {
-        "image": "/committee/sarah-phiri.jpg",
-        "name": "Sarah Phiri",
-        "role": "Equality, Diversity and Inclusion Secretary",
-        "roleDescription": "Leads efforts to ensure the society is inclusive and welcoming to all students, and manages initiatives to promote diversity."
+        "role": "Secretary - Leeds Computing Society",
+        "roleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit tempor ipsum, non interdum lectus vestibulum quis. Sed interdum lacinia sapien eu semper."
     },
     {
         "image": "/committee/archie-simpson.jpg",
         "name": "Archie Simpson",
-        "role": "Academic Events Secretary",
-        "roleDescription": "Organises and runs events such as industry talks and workshops, and coordinates industry collaborations."
+        "role": "Academic Events Secretary - Leeds Computing Society",
+        "roleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit tempor ipsum, non interdum lectus vestibulum quis. Sed interdum lacinia sapien eu semper."
     },
     {
         "image": "/committee/nalani-swan.jpg",
         "name": "Nalani Swan",
-        "role": "Social Media Officer",
-        "roleDescription": "Maintains the society's social media presence across platforms to update members on events, news, and opportunities."
+        "role": "Social Media Officer - Leeds Computing Society",
+        "roleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit tempor ipsum, non interdum lectus vestibulum quis. Sed interdum lacinia sapien eu semper."
     },
     {
-        "image": "/committee/oleksandr-tunik.jpg",
-        "name": "Oleksandr (Alex) Tunik",
-        "role": "Gaming and Interests Secretary",
-        "roleDescription": "Organises and runs social events linked to the interests and hobbies of members, such as Pixel Bar gaming tournaments."
+        "image": "/committee/anthony-obrien.jpg",
+        "name": "Anthony O'Brien",
+        "role": "Sponsorship Officer",
+        "roleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit tempor ipsum, non interdum lectus vestibulum quis. Sed interdum lacinia sapien eu semper."
+    },
+    {
+        "image": "/committee/kai-ling-hoo.jpg",
+        "name": "Kai Ling Hoo",
+        "role": "Design and Marketing Lead",
+        "roleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit tempor ipsum, non interdum lectus vestibulum quis. Sed interdum lacinia sapien eu semper."
+    },
+    {
+        "image": "/committee/josh-mundray.jpg",
+        "name": "Josh Mundray",
+        "role": "Logistics Lead",
+        "roleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit tempor ipsum, non interdum lectus vestibulum quis. Sed interdum lacinia sapien eu semper."
+    },
+    {
+        "image": "/committee/naomi-josebashvili.jpg",
+        "name": "Naomi Josebashvili",
+        "role": "Experience Officer",
+        "roleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit tempor ipsum, non interdum lectus vestibulum quis. Sed interdum lacinia sapien eu semper."
     },
     {
         "image": "/committee/george-hester.jpg",
         "name": "George Hester",
-        "role": "Web Development Officer",
-        "roleDescription": "Works on the general development of the Leeds Computing Society website and controls development aspects of the online presence."
+        "role": "Web Development Officer - Leeds Computing Society",
+        "roleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit tempor ipsum, non interdum lectus vestibulum quis. Sed interdum lacinia sapien eu semper."
     }
 ]

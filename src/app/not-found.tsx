@@ -31,7 +31,7 @@ export default function Home()
                     className="text-header-sm min-[32rem]:text-header-md min-[66rem]:text-header-lg"
                 />
                 <div className="text-md min-[32rem]:text-lg">
-                    It seems you are lost, traveller. Return <Link href="/" className="text-link link">Home</Link>.
+                    It seems you are lost, traveller. Return <Link href="/" className="text-link link link-leeds-hack-2026">Home</Link>.
                 </div>
             </div>
         </div>

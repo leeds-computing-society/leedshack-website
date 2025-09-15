@@ -3,12 +3,12 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
-type HeaderItemType = "default" | "leedshack-2025" | "leedshack-2026";
+type HeaderItemType = "default" | "leeds-hack-2025" | "leeds-hack-2026";
 
 const HeaderItemTypeMap: { [key in HeaderItemType]: string; } = {
     "default": "link",
-    "leedshack-2025": "link link-leeds-hack-2025",
-    "leedshack-2026": "link link-leeds-hack-2026"
+    "leeds-hack-2025": "link link-leeds-hack-2025",
+    "leeds-hack-2026": "link link-leeds-hack-2026"
 };
 
 interface HeaderItem
@@ -20,30 +20,29 @@ interface HeaderItem
 
 const headerItems: HeaderItem[] = [
     {
-        text: "Home",
+        text: "LeedsHack 2026",
         link: "/",
-        type: "default"
+        type: "leeds-hack-2026"
     },
     {
-        text: "Events",
-        link: "/events",
-        type: "default"
-
+        text: "LeedsHack 2025",
+        link: "/2025",
+        type: "leeds-hack-2025"
     },
     {
         text: "Committee",
         link: "/committee",
-        type: "default"
+        type: "leeds-hack-2026"
     },
     {
         text: "Sponsors",
         link: "/sponsors",
-        type: "default"
+        type: "leeds-hack-2026"
     },
     {
-        text: "LeedsHack",
-        link: "https://leedshack.com",
-        type: "leedshack-2026"
+        text: "FAQ",
+        link: "/questions",
+        type: "leeds-hack-2026"
     }
 ];
 

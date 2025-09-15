@@ -114,7 +114,7 @@
     --color-leeds-hack-2026-primary-500: #e500ff;
     --color-leeds-hack-2026-secondary-500: #ff00bf;
 
-    --color-link: var(--color-brand-secondary-300);
+    --color-link: var(--color-leeds-hack-2026-primary-500);
 
     --blur-mouse: 4vh;
     --blur-blob: 8vh;

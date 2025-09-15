@@ -13,7 +13,7 @@ export default function Page()
                         omitDeletionAnimation={true}
                         sequence={[
                             "",
-                            "LeedsHack 2026"
+                            "LeedsHack 2025"
                         ]}
                         wrapper="div"
                         speed={40}

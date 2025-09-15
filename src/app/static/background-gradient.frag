@@ -1,6 +1,7 @@
 #pragma glslify: noise = require('glsl-noise/simplex/3d')
 
 uniform float time;
+uniform vec3 colour2;
 
 varying vec2 vUv;
 
@@ -13,12 +14,7 @@ void main()	{
     vec2 uv = vUv;
 
     vec3 colour1 = vec3(0.0, 0.027450980392156862, 0.30196078431372547);
-    // vec3 colour2 = vec3(0.1411764705882353, 0.5294117647058824, 0.6392156862745098);
-    vec3 colour2 = vec3(0.07058823529411765, 0.2784313725490196, 0.47058823529411764);
-
-   //vec3 colour2 = vec3(0.0, 0.38823529411764707, 0.34509803921568627);
-    // vec3 colour1 = vec3(1.0, 0.0, 0.0);
-    // vec3 colour2 = vec3(0.0, 0.0, 1.0);
+    // vec3 colour2 = vec3(0.45098039215686275, 0.01568627450980392, 0.6509803921568628);
 
     for (float i = 0.0; i < 4.0; i++) {
         uv += noise(vec3(uv - i * 0.2, time + i * 32.)) * 0.2;
