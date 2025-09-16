@@ -38,8 +38,8 @@ export const BackgroundGradient = () =>
     const calculateNewValue = (target: number, current: number): number =>
     {
         let difference = Math.abs(target - current);
-        if (target > current) return current + difference * 0.1;
-        return current - difference * 0.1;
+        if (target > current) return current + difference * 0.025;
+        return current - difference * 0.025;
     };
 
     useFrame(({ clock }) =>
@@ -47,7 +47,6 @@ export const BackgroundGradient = () =>
         if (!gradientShader.current) return;
         gradientShader.current.time = clock.elapsedTime * 0.1;
         if (gradientShader.current.colour2 === undefined) return;
-        console.log(targetColour.x, gradientShader.current.colour2.x);
         let newX = calculateNewValue(targetColour.x, gradientShader.current.colour2.x);
         let newY = calculateNewValue(targetColour.y, gradientShader.current.colour2.y);
         let newZ = calculateNewValue(targetColour.z, gradientShader.current.colour2.z);
@@ -56,7 +55,8 @@ export const BackgroundGradient = () =>
 
     useEffect(() =>
     {
-        if (pathname === "/2025") return setTargetColour(new Vector3(0.0, 0.38823529411764707, 0.34509803921568627));
+        if (pathname === "/2025") return setTargetColour(new Vector3(0.0, 0.5686274509803921, 0.3686274509803922));
+        // if (pathname === "/2025") return setTargetColour(new Vector3(0.0, 0.38823529411764707, 0.34509803921568627));
         if (pathname !== "/2025") return setTargetColour(new Vector3(0.45098039215686275, 0.01568627450980392, 0.6509803921568628));
     }, [pathname]);
 

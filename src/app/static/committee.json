@@ -2,61 +2,63 @@
     {
         "image": "/committee/miranda-gough.jpg",
         "name": "Miranda Gough",
-        "role": "President - Leeds Computing Society",
-        "roleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit tempor ipsum, non interdum lectus vestibulum quis. Sed interdum lacinia sapien eu semper."
+        "role": "Mentor",
+        "roleDescription": "One of the lead organisers of the first ever LeedsHack last year, this year overseeing the event to support and guide the organising team in their roles.",
+        "founder": true,
+        "lcs": true
     },
     {
         "image": "/committee/eschal-najmi.jpg",
         "name": "Eschal Najmi",
-        "role": "Treasurer - Leeds Computing Society",
-        "roleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit tempor ipsum, non interdum lectus vestibulum quis. Sed interdum lacinia sapien eu semper."
+        "role": "Mentor",
+        "roleDescription": "One of the lead organisers of the first ever LeedsHack last year, this year overseeing the event to support and guide the organising team in their roles. Also responsible for LeedsHack finances.",
+        "founder": true,
+        "lcs": true
     },
     {
         "image": "/committee/paige-uppal.jpg",
         "name": "Paige Uppal",
-        "role": "Secretary - Leeds Computing Society",
-        "roleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit tempor ipsum, non interdum lectus vestibulum quis. Sed interdum lacinia sapien eu semper."
-    },
-    {
-        "image": "/committee/archie-simpson.jpg",
-        "name": "Archie Simpson",
-        "role": "Academic Events Secretary - Leeds Computing Society",
-        "roleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit tempor ipsum, non interdum lectus vestibulum quis. Sed interdum lacinia sapien eu semper."
+        "role": "Mentor",
+        "roleDescription": "One of the lead organisers of the first ever LeedsHack last year, this year overseeing the event to support and guide the organising team in their roles.",
+        "founder": true,
+        "lcs": true
     },
     {
         "image": "/committee/nalani-swan.jpg",
         "name": "Nalani Swan",
-        "role": "Social Media Officer - Leeds Computing Society",
-        "roleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit tempor ipsum, non interdum lectus vestibulum quis. Sed interdum lacinia sapien eu semper."
+        "role": "Social Media Officer",
+        "roleDescription": "Maintains the society's social media presence across Instagram and WhatsApp to update members on events, news, and opportunities.",
+        "lcs": true
     },
     {
         "image": "/committee/anthony-obrien.jpg",
         "name": "Anthony O'Brien",
         "role": "Sponsorship Officer",
-        "roleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit tempor ipsum, non interdum lectus vestibulum quis. Sed interdum lacinia sapien eu semper."
+        "roleDescription": "Responsible for securing sponsorships for the event and managing relationships with sponsor representatives."
     },
     {
         "image": "/committee/kai-ling-hoo.jpg",
         "name": "Kai Ling Hoo",
         "role": "Design and Marketing Lead",
-        "roleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit tempor ipsum, non interdum lectus vestibulum quis. Sed interdum lacinia sapien eu semper."
+        "roleDescription": "Oversees all branding and creative assets such as promotional materials, social media posts, and merchandise."
     },
     {
         "image": "/committee/josh-mundray.jpg",
         "name": "Josh Mundray",
         "role": "Logistics Lead",
-        "roleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit tempor ipsum, non interdum lectus vestibulum quis. Sed interdum lacinia sapien eu semper."
+        "roleDescription": "Co-ordinates ticketing, health and safety, venue, catering, and equipment for the event."
     },
     {
         "image": "/committee/naomi-josebashvili.jpg",
         "name": "Naomi Josebashvili",
         "role": "Experience Officer",
-        "roleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit tempor ipsum, non interdum lectus vestibulum quis. Sed interdum lacinia sapien eu semper."
+        "roleDescription": "Ensures the event is accessible, engaging, and a positive experience for all participants through running challenges, workshops, and welfare activities."
     },
     {
         "image": "/committee/george-hester.jpg",
         "name": "George Hester",
-        "role": "Web Development Officer - Leeds Computing Society",
-        "roleDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus hendrerit tempor ipsum, non interdum lectus vestibulum quis. Sed interdum lacinia sapien eu semper."
+        "role": "Web Development Officer",
+        "roleDescription": "Works on the general development of the Leeds Computing Society website and controls development aspects of the online presence.",
+        "lcs": true
     }
 ]

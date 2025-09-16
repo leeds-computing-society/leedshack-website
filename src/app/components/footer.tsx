@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FooterLink } from "./footer-link";
 
 export const Footer = () =>
@@ -6,7 +7,7 @@ export const Footer = () =>
         <div className="flex flex-row justify-center border-t border-b border-dashed border-white/50">
             <div className="flex flex-col min-[48rem]:flex-row justify-between mx-6 min-[64rem]:mx-12 min-[80rem]:mx-48 grow max-w-[96rem] border-l border-r border-dashed border-white/50">
                 <div className="p-6 flex flex-col gap-12 justify-between text-white/75">
-                    <div>&copy; {new Date().getFullYear()} LeedsHack <a className="text-white/50">By Leeds Computing Society</a></div>
+                    <div>&copy; {new Date().getFullYear()} LeedsHack <span className="text-white/50 text-nowrap">By <Link href="https://luucompsoc.co.uk" className="link">Leeds Computing Society</Link></span></div>
                     <div className="flex flex-col gap-2">
                         <FooterLink text="Instagram" href="https://www.instagram.com/luucompsoc" icon={
                             <svg className="w-5 fill-white/75" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -36,12 +37,8 @@ export const Footer = () =>
                                 <path d="M10.6667 5.04467L7.01563 7.42578C6.75232 7.59766 6.45 7.70153 6.13542 7.72469L6 7.72979C5.68251 7.72979 5.37364 7.64743 5.09983 7.49541L4.98438 7.42578L1.33333 5.04552V9.04348C1.33333 9.23254 1.40504 9.40423 1.51736 9.52327C1.62802 9.6405 1.76599 9.69565 1.89757 9.69565H10.1024C10.234 9.69565 10.372 9.6405 10.4826 9.52327C10.595 9.40423 10.6667 9.23254 10.6667 9.04348V5.04467ZM10.6536 2.8181C10.6283 2.6846 10.5668 2.56592 10.4826 2.47673C10.372 2.3595 10.234 2.30435 10.1024 2.30435H1.89757C1.76599 2.30435 1.62802 2.3595 1.51736 2.47673C1.40504 2.59577 1.33333 2.76746 1.33333 2.95652V3.09834L1.33854 3.1875C1.34924 3.27583 1.37616 3.36024 1.4158 3.43546C1.4684 3.53516 1.54085 3.61277 1.62153 3.66559L5.72396 6.34052L5.72483 6.34137L5.79167 6.37789C5.85957 6.4095 5.93033 6.42544 6 6.42544L6.07031 6.42035C6.14018 6.41004 6.20991 6.3839 6.27517 6.34137L6.27604 6.34052L10.3776 3.66559L10.4366 3.62143C10.4938 3.57249 10.5446 3.50977 10.5842 3.43461C10.6239 3.35931 10.6508 3.27507 10.6615 3.18665L10.6667 3.09749V2.95652L10.6536 2.8181ZM12 9.04348C12 9.54628 11.812 10.0379 11.4627 10.4081C11.1117 10.7801 10.6237 11 10.1024 11H1.89757C1.37634 11 0.888286 10.7801 0.537326 10.4081C0.188022 10.0379 0 9.54628 0 9.04348V2.95652C9.68857e-09 2.45372 0.188022 1.96207 0.537326 1.59188C0.888286 1.21994 1.37634 1 1.89757 1H10.1024C10.6237 1 11.1117 1.21994 11.4627 1.59188C11.812 1.96207 12 2.45372 12 2.95652V9.04348Z" />
                             </svg>
                         }></FooterLink>
-                        <div className="text-sm mt-12 text-brand-primary-300">
-                            01001000 01100101 01101100 01101100 01101111 00100000 01010111 01101111 01110010 01101100 01100100 00100001
-                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
     );

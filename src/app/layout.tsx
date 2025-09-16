@@ -12,6 +12,7 @@ const jetBrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
     title: "LeedsHack | Leeds Computing Society",
+    keywords: ["LeedsHack", "LeedsHack 2026", "LeedsHack 2025", "Leeds Computing Society", "University of Leeds", "School of Computing", "LUU", "Leeds University Union", "LUUCompSoc", "CompSoc", "Computing Society"],
     description: "The official student computing society of the University of Leeds. We work with the School of Computing and local companies to run a range of fun events and socials, providing plenty of activities for everyone.",
     twitter: {
         title: "LeedsHack | Leeds Computing Society | Leeds University Union",

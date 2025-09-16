@@ -143,6 +143,26 @@ html {
     transition: background 0.25s;
 }
 
+.transition-sponsor {
+    transition:
+        background 0.5s,
+        fill 0.5s;
+}
+
+.animation-opacity-in {
+    animation-name: opacity-in;
+    animation-duration: 0.5s;
+}
+
+@keyframes opacity-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .link {
     cursor: pointer;
     text-decoration: none;
@@ -162,6 +182,22 @@ html {
     &:hover::after {
         left: 0;
         width: 100%;
+    }
+}
+
+.link-shown {
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: var(--color-brand-secondary-500);
     }
 }
 
@@ -203,4 +239,32 @@ html {
         --tpp-brand-primary: #272f64;
         --tpp-brand-secondary: #272f64;
     }
+}
+
+@property --sponsor-background-primary {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #ffffff40;
+}
+
+@property --sponsor-background-secondary {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #ffffff1a;
+}
+
+/*.bg-sponsor {
+    background: linear-gradient(120deg, var(--sponsor-background-primary), var(--sponsor-background-secondary));
+    transition:
+        --sponsor-background-primary 0.5s,
+        --sponsor-background-secondary 0.5s;
+
+    &:hover {
+        --sponsor-background-primary: #ffffff;
+        --sponsor-background-secondary: #ffffffcc;
+    }
+} */
+
+.bg-sponsor {
+    background: linear-gradient(120deg, var(--sponsor-background-primary), var(--sponsor-background-secondary));
 }
