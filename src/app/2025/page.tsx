@@ -16,6 +16,7 @@ export default function Page()
 {
     return (
         <div className="flex flex-row justify-center grow text-white">
+            <h1 className="hidden">LeedsHack 2025</h1>
             <div className="flex flex-col text-center mx-6 min-[64rem]:mx-12 min-[80rem]:mx-48 grow max-w-[96rem]">
                 <div className="border-l border-r border-dashed border-white/50 py-12 min-[48rem]:py-24 px-6 min-[48rem]:px-24 flex flex-col gap-6">
                     <TypeAnimation
@@ -36,7 +37,7 @@ export default function Page()
                     <div className="flex flex-row flex-wrap justify-center gap-12 pt-3">
                         <StatisticCard label="Hackers" value="84"></StatisticCard>
                         <StatisticCard label="Sponsors" value="8"></StatisticCard>
-                        <StatisticCard label="Prizes" value="1200+"></StatisticCard>
+                        <StatisticCard label="Prizes" value="£1200+"></StatisticCard>
                     </div>
                 </div>
                 <div className="flex flex-col">
