@@ -3,7 +3,7 @@ export interface Properties extends React.SVGProps<SVGSVGElement> { };
 export const UoLLogo = (properties: Properties) =>
 {
     return (
-        <svg viewBox="0 0 1298 263" {...properties}>
+        <svg aria-label="University of Leeds Logo" viewBox="0 0 1298 263" {...properties}>
             <path d="M157 84.0402H161.2V80.2402H154.4V91.6302H157V84.0402Z" />
             <path d="M162.4 168.97H167V127.4H177.2V119.81H162.4V168.97Z" />
             <path d="M142 168.97H146.6V127.4H156.8V119.81H142V168.97Z" />

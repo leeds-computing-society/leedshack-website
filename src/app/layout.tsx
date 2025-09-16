@@ -1,5 +1,5 @@
 import "./globals.css";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { MouseHighlight } from "./components/mouse-highlight";
 import { Header } from "./components/header";
 import { JetBrains_Mono } from "next/font/google";
@@ -7,13 +7,19 @@ import { Footer } from "./components/footer";
 import { Background } from "./components/background";
 
 const jetBrainsMono = JetBrains_Mono({
-    subsets: ['latin'],
+    subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
     title: "LeedsHack | Leeds Computing Society",
     keywords: ["LeedsHack", "LeedsHack 2026", "LeedsHack 2025", "Leeds Computing Society", "University of Leeds", "School of Computing", "LUU", "Leeds University Union", "LUUCompSoc", "CompSoc", "Computing Society"],
     description: "LeedsHack is the official hackathon of the Leeds Computing Society. LeedsHack is supported by the University of Leeds, School of Computing and our sponsors. We invite students from Universities across the UK to participate in a free 24-hour hackathon.",
+    applicationName: "LeedsHack",
+    authors: {
+        name: "Leeds Computing Society"
+    },
+    creator: "Leeds Computing Society",
+    publisher: "Leeds Computing Society",
     icons: {
         icon: [
             { url: "/favicon.ico", sizes: "48x48" },
@@ -38,7 +44,25 @@ export const metadata: Metadata = {
     twitter: {
         title: "LeedsHack | Leeds Computing Society | Leeds University Union",
         description: "LeedsHack is the official hackathon of the Leeds Computing Society. LeedsHack is supported by the University of Leeds, School of Computing and our sponsors. We invite students from Universities across the UK to participate in a free 24-hour hackathon."
+    },
+    robots: {
+        index: true,
+        follow: true,
+        "max-snippet": -1,
+        "max-image-preview": "large",
+        "max-video-preview": 0,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-snippet": -1,
+            "max-image-preview": "large",
+            "max-video-preview": 0
+        }
     }
+};
+
+export const viewport: Viewport = {
+    themeColor: "#00074d"
 };
 
 export default function RootLayout({

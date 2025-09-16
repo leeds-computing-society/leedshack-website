@@ -35,7 +35,7 @@ export const CommitteeCard = (properties: CommitteeCardProperties) =>
         min-[128rem]:nth-[9]:border-r
       `}>
             <div className="bg-white/10 w-full aspect-square border-b border-dashed border-white/50">
-                <img alt="Committee Member Image" src={properties.image}></img>
+                <img alt={`LeedsHack Committee Member ${properties.name}`} src={properties.image}></img>
             </div>
             <div className="flex flex-col grow justify-between p-3">
                 <div>
