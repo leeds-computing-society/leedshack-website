@@ -99,21 +99,21 @@ export default function Page()
                 <div className="py-12 px-6 min-[48rem]:px-24 text-md min-[32rem]:text-lg border-l border-r border-dashed border-white/50">
                     A big thank you to all those who turned up to make it possible. Without your optimism and support we wouldn't have made LeedsHack possible.
                 </div>
-                <img className="border border-white/50" src="/leeds-hack/2025-main.jpg"></img>
+                <img alt="LeedsHack 2025 attendees" className="border border-white/50" src="/leeds-hack/2025-main.jpg"></img>
                 <div className="flex flex-row border-l border-r border-b border-white/50">
                     <div>
-                        <img src="/leeds-hack/2025-1.jpg"></img>
+                        <img alt="Attendees showing their work to a judge at LeedsHack 2025" src="/leeds-hack/2025-1.jpg"></img>
                     </div>
                     <div className="border-l border-white/50">
-                        <img src="/leeds-hack/2025-2.jpg"></img>
+                        <img alt="Attendees working on their hackathon project at LeedsHack 2025" src="/leeds-hack/2025-2.jpg"></img>
                     </div>
                 </div>
                 <div className="flex flex-row border-l border-r border-b border-white/50">
                     <div>
-                        <img src="/leeds-hack/2025-3.jpg"></img>
+                        <img alt="Attendees showing their work to a judge at LeedsHack 2025" src="/leeds-hack/2025-3.jpg"></img>
                     </div>
                     <div className="border-l border-white/50">
-                        <img src="/leeds-hack/2025-4.jpg"></img>
+                        <img alt="Attendees showing their work to a judge at LeedsHack 2025" src="/leeds-hack/2025-4.jpg"></img>
                     </div>
                 </div>
                 <div className="min-h-12 grow border-l border-r border-dashed border-white/50">

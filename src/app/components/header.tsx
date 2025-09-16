@@ -84,7 +84,7 @@ export const Header = () =>
                     {headerItems.map((item, index) => <Link key={index} href={item.link} className={HeaderItemTypeMap[item.type]}>{item.text}</Link>)}
                 </div>
                 <div className="h-full flex justify-start items-center min-[48rem]:hidden">
-                    <button onClick={menuButtonClicked} className="p-4 cursor-pointer">
+                    <button aria-label="Navigation Menu Toggle" onClick={menuButtonClicked} className="p-4 cursor-pointer">
                         <svg className="stroke-white w-6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                             <path d="M3 5H21"></path>
                             <path d="M3 12H21"></path>
