@@ -1,5 +1,5 @@
-import { CommitteeCard } from "../components/committee-card";
-import committee from "../static/committee.json";
+import { CommitteeCard } from "@/app/components/committee-card";
+import committee from "@/app/static/committee.json";
 
 export default function Page()
 {

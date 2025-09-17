@@ -1,10 +1,10 @@
 import "./globals.css";
 import type { Metadata, Viewport } from "next";
-import { MouseHighlight } from "./components/mouse-highlight";
-import { Header } from "./components/header";
+import { MouseHighlight } from "@/app/components/mouse-highlight";
+import { Header } from "@/app/components/header";
 import { JetBrains_Mono } from "next/font/google";
-import { Footer } from "./components/footer";
-import { Background } from "./components/background";
+import { Footer } from "@/app/components/footer";
+import { Background } from "@/app/components/background";
 
 const jetBrainsMono = JetBrains_Mono({
     subsets: ["latin"],

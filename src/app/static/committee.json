@@ -1,6 +1,6 @@
 [
     {
-        "image": "/committee/miranda-gough.jpg",
+        "image": "/committee/miranda-gough.webp",
         "name": "Miranda Gough",
         "role": "Mentor",
         "roleDescription": "One of the lead organisers of the first ever LeedsHack last year, this year overseeing the event to support and guide the organising team in their roles.",
@@ -8,7 +8,7 @@
         "lcs": true
     },
     {
-        "image": "/committee/eschal-najmi.jpg",
+        "image": "/committee/eschal-najmi.webp",
         "name": "Eschal Najmi",
         "role": "Mentor",
         "roleDescription": "One of the lead organisers of the first ever LeedsHack last year, this year overseeing the event to support and guide the organising team in their roles. Also responsible for LeedsHack finances.",
@@ -16,7 +16,7 @@
         "lcs": true
     },
     {
-        "image": "/committee/paige-uppal.jpg",
+        "image": "/committee/paige-uppal.webp",
         "name": "Paige Uppal",
         "role": "Mentor",
         "roleDescription": "One of the lead organisers of the first ever LeedsHack last year, this year overseeing the event to support and guide the organising team in their roles.",
@@ -24,38 +24,38 @@
         "lcs": true
     },
     {
-        "image": "/committee/nalani-swan.jpg",
+        "image": "/committee/nalani-swan.webp",
         "name": "Nalani Swan",
         "role": "Social Media Officer",
         "roleDescription": "Maintains the society's social media presence across Instagram and WhatsApp to update members on events, news, and opportunities.",
         "lcs": true
     },
     {
-        "image": "/committee/anthony-obrien.jpg",
+        "image": "/committee/anthony-obrien.webp",
         "name": "Anthony O'Brien",
         "role": "Sponsorship Officer",
         "roleDescription": "Responsible for securing sponsorships for the event and managing relationships with sponsor representatives."
     },
     {
-        "image": "/committee/kai-ling-hoo.jpg",
+        "image": "/committee/kai-ling-hoo.webp",
         "name": "Kai Ling Hoo",
         "role": "Design and Marketing Lead",
         "roleDescription": "Oversees all branding and creative assets such as promotional materials, social media posts, and merchandise."
     },
     {
-        "image": "/committee/josh-mundray.jpg",
+        "image": "/committee/josh-mundray.webp",
         "name": "Josh Mundray",
         "role": "Logistics Lead",
         "roleDescription": "Co-ordinates ticketing, health and safety, venue, catering, and equipment for the event."
     },
     {
-        "image": "/committee/naomi-josebashvili.jpg",
+        "image": "/committee/naomi-josebashvili.webp",
         "name": "Naomi Josebashvili",
         "role": "Experience Officer",
         "roleDescription": "Ensures the event is accessible, engaging, and a positive experience for all participants through running challenges, workshops, and welfare activities."
     },
     {
-        "image": "/committee/george-hester.jpg",
+        "image": "/committee/george-hester.webp",
         "name": "George Hester",
         "role": "Web Development Officer",
         "roleDescription": "Works on the general development of the Leeds Computing Society website and controls development aspects of the online presence.",

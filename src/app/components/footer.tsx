@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FooterLink } from "./footer-link";
+import { FooterLink } from "@/app/components/footer-link";
 
 export const Footer = () =>
 {

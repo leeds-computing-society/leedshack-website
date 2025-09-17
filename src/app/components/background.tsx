@@ -1,6 +1,6 @@
 "use client";
 import { Canvas } from "@react-three/fiber";
-import { BackgroundGradient } from "./background-gradient";
+import { BackgroundGradient } from "@/app/components/background-gradient";
 import { useRef } from "react";
 
 export const Background = () =>

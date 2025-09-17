@@ -1,16 +1,16 @@
 "use client";
 import { TypeAnimation } from "react-type-animation";
-import { SnowflakeLogo } from "../components/sponsors/snowflake-logo";
-import { IMDbLogo } from "../components/sponsors/imdb-logo";
-import { PexipLogo } from "../components/sponsors/pexip-logo";
-import { TheDataCityLogo } from "../components/sponsors/the-data-city-logo";
-import { RebuildingSocietyLogo } from "../components/sponsors/rebuilding-society-logo";
-import { GenioLogo } from "../components/sponsors/genio-logo";
-import { HetznerLogo } from "../components/sponsors/hetzner-logo";
-import { AudaciaLogo } from "../components/sponsors/audacia-logo";
-import { UoLLogo } from "../components/uol-logo";
-import { SponsorLink } from "../components/sponsor-link";
-import { StatisticCard } from "../components/statistic-card";
+import { SnowflakeLogo } from "@/app/components/sponsors/snowflake-logo";
+import { IMDbLogo } from "@/app/components/sponsors/imdb-logo";
+import { PexipLogo } from "@/app/components/sponsors/pexip-logo";
+import { TheDataCityLogo } from "@/app/components/sponsors/the-data-city-logo";
+import { RebuildingSocietyLogo } from "@/app/components/sponsors/rebuilding-society-logo";
+import { GenioLogo } from "@/app/components/sponsors/genio-logo";
+import { HetznerLogo } from "@/app/components/sponsors/hetzner-logo";
+import { AudaciaLogo } from "@/app/components/sponsors/audacia-logo";
+import { UoLLogo } from "@/app/components/uol-logo";
+import { SponsorLink } from "@/app/components/sponsor-link";
+import { StatisticCard } from "@/app/components/statistic-card";
 
 export default function Page()
 {
@@ -100,21 +100,21 @@ export default function Page()
                 <div className="py-12 px-6 min-[48rem]:px-24 text-md min-[32rem]:text-lg border-l border-r border-dashed border-white/50">
                     A big thank you to all those who turned up to make it possible. Without your optimism and support we wouldn't have made LeedsHack possible.
                 </div>
-                <img alt="LeedsHack 2025 attendees" className="border border-white/50" src="/leeds-hack/2025-main.jpg"></img>
+                <img alt="LeedsHack 2025 attendees" className="border border-white/50" src="/leeds-hack/2025-main.webp"></img>
                 <div className="flex flex-row border-l border-r border-b border-white/50">
                     <div>
-                        <img alt="Attendees showing their work to a judge at LeedsHack 2025" src="/leeds-hack/2025-1.jpg"></img>
+                        <img alt="Attendees showing their work to a judge at LeedsHack 2025" src="/leeds-hack/2025-1.webp"></img>
                     </div>
                     <div className="border-l border-white/50">
-                        <img alt="Attendees working on their hackathon project at LeedsHack 2025" src="/leeds-hack/2025-2.jpg"></img>
+                        <img alt="Attendees working on their hackathon project at LeedsHack 2025" src="/leeds-hack/2025-2.webp"></img>
                     </div>
                 </div>
                 <div className="flex flex-row border-l border-r border-b border-white/50">
                     <div>
-                        <img alt="Attendees showing their work to a judge at LeedsHack 2025" src="/leeds-hack/2025-3.jpg"></img>
+                        <img alt="Attendees showing their work to a judge at LeedsHack 2025" src="/leeds-hack/2025-3.webp"></img>
                     </div>
                     <div className="border-l border-white/50">
-                        <img alt="Attendees showing their work to a judge at LeedsHack 2025" src="/leeds-hack/2025-4.jpg"></img>
+                        <img alt="Attendees showing their work to a judge at LeedsHack 2025" src="/leeds-hack/2025-4.webp"></img>
                     </div>
                 </div>
                 <div className="min-h-12 grow border-l border-r border-dashed border-white/50">

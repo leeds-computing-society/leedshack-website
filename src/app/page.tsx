@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { LeedsHack2026Logo } from "./components/leeds-hack-2026-logo";
+import { LeedsHack2026Logo } from "@/app/components/leeds-hack-2026-logo";
 
 export default function Page()
 {
