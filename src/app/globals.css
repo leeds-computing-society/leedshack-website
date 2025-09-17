@@ -111,8 +111,9 @@
 
     --color-leeds-hack-2025-primary-500: #00bf63;
 
-    --color-leeds-hack-2026-primary-500: #e500ff;
-    --color-leeds-hack-2026-secondary-500: #ff00bf;
+    /* --color-leeds-hack-2026-primary-500: #e500ff;
+    --color-leeds-hack-2026-secondary-500: #ff00bf; */
+    --color-leeds-hack-2026-primary-500: #8c52ff;
 
     --color-link: var(--color-leeds-hack-2026-primary-500);
 
@@ -147,6 +148,10 @@ html {
     transition:
         background 0.5s,
         fill 0.5s;
+}
+
+.transition-header {
+    transition: background 0.5s;
 }
 
 .animation-opacity-in {
@@ -209,10 +214,11 @@ html {
 
 .link-leeds-hack-2026 {
     &::after {
-        background: linear-gradient(
+        background: var(--color-leeds-hack-2026-primary-500);
+        /* background: linear-gradient(
             120deg,
             var(--color-leeds-hack-2026-primary-500) 0%,
             var(--color-leeds-hack-2026-secondary-500) 100%
-        );
+        ); */
     }
 }

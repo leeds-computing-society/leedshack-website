@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export interface CommitteeCardProperties
 {
-    image: string;
+    image?: string | undefined;
     name: string;
     role: string;
     founder?: boolean;
@@ -35,7 +35,19 @@ export const CommitteeCard = (properties: CommitteeCardProperties) =>
         min-[128rem]:nth-[9]:border-r
       `}>
             <div className="bg-white/10 w-full aspect-square border-b border-dashed border-white/50">
-                <img alt={`LeedsHack Committee Member ${properties.name}`} src={properties.image}></img>
+                {/* <img alt={`LeedsHack Committee Member ${properties.name}`} src={properties.image}></img> */}
+                {properties.image !== undefined ?
+                    <img alt={`LeedsHack Committee Member ${properties.name}`} src={properties.image}></img>
+                    :
+                    <svg viewBox="0 0 256 256" strokeWidth="1" className="w-full h-full stroke-white/50">
+                        <line
+                            x1="0"
+                            y1="256"
+                            x2="256"
+                            y2="0"
+                        />
+                    </svg>
+                }
             </div>
             <div className="flex flex-col grow justify-between p-3">
                 <div>

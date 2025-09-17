@@ -152,7 +152,7 @@ export default function RootLayout({
                     />)
                 }
             </head>
-            <body className={jetBrainsMono.className + " absolute h-full w-full m-0 p-0 bg-brand-primary-500"}>
+            <body className={jetBrainsMono.className + " absolute h-full w-full m-0 p-0 bg-black"}>
                 <div className="absolute w-full flex flex-col overflow-hidden">
                     <Background></Background>
                     <MouseHighlight></MouseHighlight>

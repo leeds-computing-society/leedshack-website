@@ -1,6 +1,7 @@
 #pragma glslify: noise = require('glsl-noise/simplex/3d')
 
 uniform float time;
+uniform vec3 colour1;
 uniform vec3 colour2;
 
 varying vec2 vUv;
@@ -13,7 +14,7 @@ vec3 cosineGradientColour(in float t, in vec3 a, in vec3 b) {
 void main()	{
     vec2 uv = vUv;
 
-    vec3 colour1 = vec3(0.0, 0.027450980392156862, 0.30196078431372547);
+    // vec3 colour1 = vec3(0.0, 0.027450980392156862, 0.30196078431372547);
     // vec3 colour2 = vec3(0.45098039215686275, 0.01568627450980392, 0.6509803921568628);
 
     for (float i = 0.0; i < 4.0; i++) {

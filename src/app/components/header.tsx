@@ -1,7 +1,14 @@
 "use client";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+
+type HeaderType = "leeds-hack-2025" | "leeds-hack-2026";
+
+const HeaderTypeMap: { [key in HeaderType]: string; } = {
+    "leeds-hack-2025": "bg-brand-primary-500/50",
+    "leeds-hack-2026": "bg-black/25"
+};
 
 type HeaderItemType = "default" | "leeds-hack-2025" | "leeds-hack-2026";
 
@@ -48,8 +55,10 @@ const headerItems: HeaderItem[] = [
 
 export const Header = () =>
 {
+    let pathname = usePathname();
     let router = useRouter();
     let [menuOpen, setMenuOpen] = useState<boolean>(false);
+    let [headerType, setHeaderType] = useState<HeaderType>("leeds-hack-2026");
 
     let menuButtonClicked = () =>
     {
@@ -69,17 +78,20 @@ export const Header = () =>
 
     useEffect(() =>
     {
+        if (pathname === "/2025") setHeaderType("leeds-hack-2025");
+        if (pathname !== "/2025") setHeaderType("leeds-hack-2026");
+
         window.addEventListener("resize", handleResize);
 
         return () =>
         {
             window.removeEventListener("resize", handleResize);
         };
-    }, []);
+    }, [pathname]);
 
     return (
         <div className="fixed h-14 w-full text-md z-50 text-white">
-            <div style={{ WebkitBackdropFilter: "blur(48px)", backdropFilter: "blur(48px)" }} className="h-14 bg-brand-primary-500/50 border-b border-white/50">
+            <div style={{ WebkitBackdropFilter: "blur(48px)", backdropFilter: "blur(48px)" }} className={`${HeaderTypeMap[headerType]} h-14 transition-header border-b border-white/50`}>
                 <div className="h-full flex justify-center items-center gap-6 max-[48rem]:hidden">
                     {headerItems.map((item, index) => <Link key={index} href={item.link} className={HeaderItemTypeMap[item.type]}>{item.text}</Link>)}
                 </div>
@@ -93,7 +105,7 @@ export const Header = () =>
                     </button>
                 </div>
             </div>
-            <div style={{ WebkitBackdropFilter: "blur(24px)", backdropFilter: "blur(48px)" }} className={`transition-navigation bg-brand-primary-500/50 border-dashed w-full text-md overflow-clip border-b border-transparent flex flex-col gap-3 items-center ${menuOpen ? "h-[9rem] border-white/50" : "h-0 border-b-0"}`}>
+            <div style={{ WebkitBackdropFilter: "blur(24px)", backdropFilter: "blur(48px)" }} className={`${HeaderTypeMap[headerType]} transition-navigation transition-header border-dashed w-full text-md overflow-clip border-b border-transparent flex flex-col gap-3 items-center ${menuOpen ? "h-[9rem] border-white/50" : "h-0 border-b-0"}`}>
                 {headerItems.map((item, index) => <button key={index} onClick={() => navigationClicked(item.link)} className={HeaderItemTypeMap[item.type] + " first:mt-6 last:mb-6"}>{item.text}</button>)}
             </div>
         </div>
