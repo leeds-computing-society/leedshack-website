@@ -93,7 +93,7 @@ export const Header = () =>
                     </button>
                 </div>
             </div>
-            <div style={{ WebkitBackdropFilter: "blur(24px)", backdropFilter: "blur(48px)" }} className={`transition-navigation bg-brand-primary-500/50 border-dashed w-full text-md overflow-clip border-b border-transparent flex flex-col gap-3 items-center ${menuOpen ? "h-[13.5rem] border-white/50" : "h-0"}`}>
+            <div style={{ WebkitBackdropFilter: "blur(24px)", backdropFilter: "blur(48px)" }} className={`transition-navigation bg-brand-primary-500/50 border-dashed w-full text-md overflow-clip border-b border-transparent flex flex-col gap-3 items-center ${menuOpen ? "h-[9rem] border-white/50" : "h-0 border-b-0"}`}>
                 {headerItems.map((item, index) => <button key={index} onClick={() => navigationClicked(item.link)} className={HeaderItemTypeMap[item.type] + " first:mt-6 last:mb-6"}>{item.text}</button>)}
             </div>
         </div>

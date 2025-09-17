@@ -24,19 +24,6 @@
         "lcs": true
     },
     {
-        "image": "/committee/nalani-swan.webp",
-        "name": "Nalani Swan",
-        "role": "Social Media Officer",
-        "roleDescription": "Maintains the society's social media presence across Instagram and WhatsApp to update members on events, news, and opportunities.",
-        "lcs": true
-    },
-    {
-        "image": "/committee/anthony-obrien.webp",
-        "name": "Anthony O'Brien",
-        "role": "Sponsorship Officer",
-        "roleDescription": "Responsible for securing sponsorships for the event and managing relationships with sponsor representatives."
-    },
-    {
         "image": "/committee/kai-ling-hoo.webp",
         "name": "Kai Ling Hoo",
         "role": "Design and Marketing Lead",
@@ -53,6 +40,19 @@
         "name": "Naomi Josebashvili",
         "role": "Experience Officer",
         "roleDescription": "Ensures the event is accessible, engaging, and a positive experience for all participants through running challenges, workshops, and welfare activities."
+    },
+    {
+        "image": "/committee/anthony-obrien.webp",
+        "name": "Anthony O'Brien",
+        "role": "Sponsorship Officer",
+        "roleDescription": "Responsible for securing sponsorships for the event and managing relationships with sponsor representatives."
+    },
+    {
+        "image": "/committee/nalani-swan.webp",
+        "name": "Nalani Swan",
+        "role": "Social Media Officer",
+        "roleDescription": "Maintains the society's social media presence across Instagram and WhatsApp to update members on events, news, and opportunities.",
+        "lcs": true
     },
     {
         "image": "/committee/george-hester.webp",
