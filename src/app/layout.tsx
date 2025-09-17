@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Metadata, Viewport } from "next";
+import type { Organization, Event, WithContext } from "schema-dts";
 import { MouseHighlight } from "@/app/components/mouse-highlight";
 import { Header } from "@/app/components/header";
 import { JetBrains_Mono } from "next/font/google";
@@ -65,6 +66,60 @@ export const viewport: Viewport = {
     themeColor: "#00074d"
 };
 
+const organisation: WithContext<Organization> = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    address: {
+        "@type": "PostalAddress",
+        streetAddress: "Lifton Place",
+        addressLocality: "Leeds",
+        addressCountry: "GB",
+        addressRegion: "England",
+        postalCode: "LS2 9JZ"
+    },
+    contactPoint: {
+        "@type": "ContactPoint",
+        email: "info@leedshack.com"
+    },
+    description: "LeedsHack is the official hackathon of the Leeds Computing Society. LeedsHack is supported by the University of Leeds, School of Computing and our sponsors. We invite students from Universities across the UK to participate in a free 24-hour hackathon.",
+    email: "info@leedshack.com",
+    logo: "https://leedshack.com/structured-data/organisation.jpg",
+    name: "LeedsHack",
+    url: "https://leedshack.com"
+};
+
+const event: WithContext<Event> = {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    location: {
+        "@type": "Place",
+        name: "Sir William Henry Bragg Building",
+        address: {
+            "@type": "PostalAddress",
+            streetAddress: "Woodhouse Lane",
+            addressLocality: "Leeds",
+            addressCountry: "GB",
+            addressRegion: "England",
+            postalCode: "LS2 9JT"
+        }
+    },
+    name: "LeedsHack 2026",
+    startDate: "2026-02-07",
+    endDate: "2026-02-08",
+    description: "LeedsHack is the official hackathon of the Leeds Computing Society. LeedsHack is supported by the University of Leeds, School of Computing and our sponsors. We invite students from Universities across the UK to participate in a free 24-hour hackathon.",
+    eventStatus: "EventScheduled",
+    image: [
+        "https://leedshack.com/structured-data/leeds-hack-1x1.jpg",
+        "https://leedshack.com/structured-data/leeds-hack-4x3.jpg",
+        "https://leedshack.com/structured-data/leeds-hack-16x9.jpg"
+    ],
+    organizer: {
+        "@type": "Organization",
+        name: "Leeds Computing Society",
+        url: "https://luucompsoc.co.uk"
+    }
+};
+
 export default function RootLayout({
     children,
 }: Readonly<{
@@ -74,6 +129,18 @@ export default function RootLayout({
     return (
         <html lang="en" >
             <head>
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(organisation).replace(/</g, '\\u003c'),
+                    }}
+                />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(event).replace(/</g, '\\u003c'),
+                    }}
+                />
             </head>
             <body className={jetBrainsMono.className + " absolute h-full w-full m-0 p-0 bg-brand-primary-500"}>
                 <div className="absolute w-full flex flex-col overflow-hidden">
