@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata, Viewport } from "next";
-import type { Organization, Event, WithContext } from "schema-dts";
+import type { Organization, Event, WithContext, WebSite } from "schema-dts";
 import { MouseHighlight } from "@/app/components/mouse-highlight";
 import { Header } from "@/app/components/header";
 import { JetBrains_Mono } from "next/font/google";
@@ -120,6 +120,19 @@ const event: WithContext<Event> = {
     }
 };
 
+let website: WithContext<WebSite> = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "LeedsHack",
+    url: "https://leedshack.com"
+};
+
+let structuredData: any[] = [
+    organisation,
+    event,
+    website
+];
+
 export default function RootLayout({
     children,
 }: Readonly<{
@@ -129,18 +142,14 @@ export default function RootLayout({
     return (
         <html lang="en" >
             <head>
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{
-                        __html: JSON.stringify(organisation).replace(/</g, '\\u003c'),
-                    }}
-                />
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{
-                        __html: JSON.stringify(event).replace(/</g, '\\u003c'),
-                    }}
-                />
+                {
+                    structuredData.map((object) => <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{
+                            __html: JSON.stringify(object).replace(/</g, '\\u003c'),
+                        }}
+                    />)
+                }
             </head>
             <body className={jetBrainsMono.className + " absolute h-full w-full m-0 p-0 bg-brand-primary-500"}>
                 <div className="absolute w-full flex flex-col overflow-hidden">
