@@ -11,15 +11,16 @@ import { AudaciaLogo } from "@/app/components/sponsors/audacia-logo";
 import { UoLLogo } from "@/app/components/uol-logo";
 import { SponsorLink } from "@/app/components/sponsor-link";
 import { StatisticCard } from "@/app/components/statistic-card";
+import { LeedsHack2025LogoOld } from "../components/leeds-hack-2026-logo-old";
 
 export default function Page()
 {
     return (
         <div className="flex flex-row justify-center grow text-white">
-            <h1 className="hidden">LeedsHack 2025</h1>
             <div className="flex flex-col text-center mx-6 min-[64rem]:mx-12 min-[80rem]:mx-48 grow max-w-[96rem]">
                 <div className="border-l border-r border-dashed border-white/50 py-12 min-[48rem]:py-24 px-6 min-[48rem]:px-24 flex flex-col gap-6">
-                    <TypeAnimation
+                    <LeedsHack2025LogoOld className="fill-white max-w-[48rem] mb-6 self-center min-[48rem]:mx-24"></LeedsHack2025LogoOld>
+                    {/* <TypeAnimation
                         preRenderFirstString={true}
                         omitDeletionAnimation={true}
                         sequence={[
@@ -30,7 +31,7 @@ export default function Page()
                         speed={40}
                         cursor={true}
                         className="h-[6.25rem] min-[29.313rem]:h-[3.375rem] min-[32rem]:h-[4rem] min-[64rem]:h-[5.25rem] text-header-sm min-[35rem]:text-header-md min-[64rem]:text-header-lg"
-                    />
+                    /> */}
                     <div className="text-md min-[32rem]:text-lg">
                         Thank you to all who attended and supported LeedsHack 2025! Your support and enthusiasm allowed the first University of Leeds hackathon to be a big success.
                     </div>
@@ -98,7 +99,7 @@ export default function Page()
                     ></SponsorLink>
                 </div>
                 <div className="py-12 px-6 min-[48rem]:px-24 text-md min-[32rem]:text-lg border-l border-r border-dashed border-white/50">
-                    A big thank you to all those who turned up to make it possible. Without your optimism and support we wouldn't have made LeedsHack possible.
+                    A big thank you to all of the participants, sponsors, volunteers, and judges at LeedsHack 2025. It wouldn't have been possible without your support, and we hope to see you again next year.
                 </div>
                 <img alt="LeedsHack 2025 attendees" className="border border-white/50" src="/leeds-hack/2025-main.webp"></img>
                 <div className="flex flex-row border-l border-r border-b border-white/50">

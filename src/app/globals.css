@@ -137,7 +137,8 @@ html {
     box-sizing: border-box;
     transition:
         height 0.25s,
-        border-bottom-color 0.25s;
+        border-bottom-color 0.25s,
+        background 0.5s;
 }
 
 .transition-button {
@@ -147,7 +148,8 @@ html {
 .transition-sponsor {
     transition:
         background 0.5s,
-        fill 0.5s;
+        fill 0.5s,
+        opacity 0.5s;
 }
 
 .transition-header {
