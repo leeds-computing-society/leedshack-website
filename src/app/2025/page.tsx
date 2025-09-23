@@ -12,6 +12,7 @@ import { UoLLogo } from "@/app/components/uol-logo";
 import { SponsorLink } from "@/app/components/sponsor-link";
 import { StatisticCard } from "@/app/components/statistic-card";
 import { LeedsHack2025LogoOld } from "../components/leeds-hack-2026-logo-old";
+import Image from "next/image";
 
 export default function Page()
 {
@@ -101,21 +102,21 @@ export default function Page()
                 <div className="py-12 px-6 min-[48rem]:px-24 text-md min-[32rem]:text-lg border-l border-r border-dashed border-white/50">
                     A big thank you to all of the participants, sponsors, volunteers, and judges at LeedsHack 2025. It wouldn't have been possible without your support, and we hope to see you again next year.
                 </div>
-                <img alt="LeedsHack 2025 attendees" className="border border-white/50" src="/leeds-hack/2025-main.webp"></img>
+                <Image className="border border-white/50" alt="LeedsHack 2025 attendees" src="/leeds-hack/2025-main.webp" width={2048} height={1024} />
                 <div className="flex flex-row border-l border-r border-b border-white/50">
                     <div>
-                        <img alt="Attendees showing their work to a judge at LeedsHack 2025" src="/leeds-hack/2025-1.webp"></img>
+                        <Image alt="Attendees showing their work to a judge at LeedsHack 2025" src="/leeds-hack/2025-1.webp" width={1536} height={1024} />
                     </div>
                     <div className="border-l border-white/50">
-                        <img alt="Attendees working on their hackathon project at LeedsHack 2025" src="/leeds-hack/2025-2.webp"></img>
+                        <Image alt="Attendees working on their hackathon project at LeedsHack 2025" src="/leeds-hack/2025-2.webp" width={1024} height={1024} />
                     </div>
                 </div>
                 <div className="flex flex-row border-l border-r border-b border-white/50">
                     <div>
-                        <img alt="Attendees showing their work to a judge at LeedsHack 2025" src="/leeds-hack/2025-3.webp"></img>
+                        <Image alt="Attendees showing their work to a judge at LeedsHack 2025" src="/leeds-hack/2025-3.webp" width={1024} height={1024} />
                     </div>
                     <div className="border-l border-white/50">
-                        <img alt="Attendees showing their work to a judge at LeedsHack 2025" src="/leeds-hack/2025-4.webp"></img>
+                        <Image alt="Attendees showing their work to a judge at LeedsHack 2025" src="/leeds-hack/2025-4.webp" width={1536} height={1024} />
                     </div>
                 </div>
                 <div className="min-h-12 grow border-l border-r border-dashed border-white/50">
