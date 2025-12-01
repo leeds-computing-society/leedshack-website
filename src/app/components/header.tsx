@@ -10,10 +10,11 @@ const HeaderTypeMap: { [key in HeaderType]: string; } = {
     "leeds-hack-2026": "bg-black/25"
 };
 
-type HeaderItemType = "default" | "leeds-hack-2025" | "leeds-hack-2026";
+type HeaderItemType = "default" | "leeds-computing-society" | "leeds-hack-2025" | "leeds-hack-2026";
 
 const HeaderItemTypeMap: { [key in HeaderItemType]: string; } = {
     "default": "link",
+    "leeds-computing-society": "link link-leeds-computing-society",
     "leeds-hack-2025": "link link-leeds-hack-2025",
     "leeds-hack-2026": "link link-leeds-hack-2026"
 };
@@ -42,9 +43,9 @@ const headerItems: HeaderItem[] = [
         type: "leeds-hack-2026"
     },
     {
-        text: "Society",
+        text: "Back To Leeds Computing Society",
         link: "https://luucompsoc.co.uk",
-        type: "default"
+        type: "leeds-computing-society"
     },
     // {
     //     text: "Sponsors",

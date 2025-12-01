@@ -57,7 +57,7 @@ export const CommitteeCard = (properties: CommitteeCardProperties) =>
                 </div>
                 <div className="flex gap-3 justify-between mt-3 text-sm text-white/75">
                     {properties.founder ? <div>Founder</div> : <div></div>}
-                    {properties.lcs && <Link href="https://luucompsoc.co.uk" className="link link-leeds-hack-2026">LCS</Link>}
+                    {properties.lcs && <Link href="https://luucompsoc.co.uk" className="link link-leeds-hack-2026">CompSoc</Link>}
                 </div>
             </div>
         </div>

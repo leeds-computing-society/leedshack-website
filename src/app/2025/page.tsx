@@ -1,4 +1,6 @@
 "use client";
+import Image from "next/image";
+import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import { SnowflakeLogo } from "@/app/components/sponsors/snowflake-logo";
 import { IMDbLogo } from "@/app/components/sponsors/imdb-logo";
@@ -12,7 +14,6 @@ import { UoLLogo } from "@/app/components/uol-logo";
 import { SponsorLink } from "@/app/components/sponsor-link";
 import { StatisticCard } from "@/app/components/statistic-card";
 import { LeedsHack2025LogoOld } from "../components/leeds-hack-2026-logo-old";
-import Image from "next/image";
 
 export default function Page()
 {
@@ -100,7 +101,7 @@ export default function Page()
                     ></SponsorLink>
                 </div>
                 <div className="py-12 px-6 min-[48rem]:px-24 text-md min-[32rem]:text-lg border-l border-r border-dashed border-white/50">
-                    A big thank you to all of the participants, sponsors, volunteers, and judges at LeedsHack 2025. It wouldn't have been possible without your support, and we hope to see you again next year.
+                    To see some of the amazing projects our LeedsHack 2025 participants built, visit our <Link href="https://leedshack2025.devpost.com" className="text-right underline underline-offset-2 decoration-2 decoration-leeds-hack-2025-primary-500">Devpost</Link>.
                 </div>
                 <Image className="border border-white/50" alt="LeedsHack 2025 attendees" src="/leeds-hack/2025-main.webp" width={2048} height={1024} />
                 <div className="flex flex-row border-l border-r border-b border-white/50">

@@ -224,3 +224,17 @@ html {
         ); */
     }
 }
+
+.link-leeds-computing-society {
+    margin-left: 1.5rem;
+
+    &::before {
+        position: absolute;
+        left: -1.5rem;
+        top: 0px;
+        content: "";
+        height: 100%;
+        width: 2px;
+        background-color: var(--color-white);
+    }
+}
