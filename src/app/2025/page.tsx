@@ -56,7 +56,7 @@ export default function Page()
                             href="https://www.imdb.com"
                         ></SponsorLink>
                         <SponsorLink
-                            className="bg-[#0d062a] fill-[#d10956] max-[64rem]:border-l-0"
+                            className="bg-[#0D062A] fill-white max-[64rem]:border-l-0"
                             logo={<TheDataCityLogo className="h-12 max-[64rem]:h-10"></TheDataCityLogo>}
                             href="https://thedatacity.com"
                         ></SponsorLink>
@@ -68,7 +68,7 @@ export default function Page()
                     </div>
                     <div className="h-32 grid grid-cols-2 border-l border-r border-b border-white/50">
                         <SponsorLink
-                            className="bg-[#4ef2ba] fill-[#0a2136]"
+                            className="bg-[#454ae4] fill-white"
                             logo={<PexipLogo className="h-6"></PexipLogo>}
                             href="https://www.pexip.com"
                         ></SponsorLink>
@@ -80,12 +80,12 @@ export default function Page()
                     </div>
                     <div className="h-24 grid grid-cols-2 border-l border-r border-b border-white/50">
                         <SponsorLink
-                            className="bg-white fill-[#d50c2d]"
+                            className="bg-[#d50c2d] fill-white"
                             logo={<HetznerLogo className="h-3"></HetznerLogo>}
                             href="https://www.hetzner.com"
                         ></SponsorLink>
                         <SponsorLink
-                            className="bg-white fill-[#0d457d]"
+                            className="bg-[#0d457d] fill-white"
                             logo={<AudaciaLogo className="h-4"></AudaciaLogo>}
                             href="https://audacia.co.uk"
                         ></SponsorLink>
@@ -95,7 +95,7 @@ export default function Page()
                 </div>
                 <div className="h-32 grid grid-cols-1 border border-white/50">
                     <SponsorLink
-                        className="bg-[#B7A6FF] fill-black"
+                        className="bg-black fill-white"
                         logo={<UoLLogo className="h-10"></UoLLogo>}
                         href="https://www.leeds.ac.uk"
                     ></SponsorLink>
