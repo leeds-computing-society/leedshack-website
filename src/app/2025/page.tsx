@@ -46,46 +46,46 @@ export default function Page()
                 <div className="flex flex-col">
                     <div className="h-40 max-[64rem]:h-80 grid grid-cols-4 max-[64rem]:grid-cols-2 border border-white/50">
                         <SponsorLink
-                            className="hover:bg-[#042130] hover:fill-[#29b5e8] max-[64rem]:border-b"
+                            className="bg-[#042130] fill-[#29b5e8] max-[64rem]:border-b"
                             logo={<SnowflakeLogo className="h-9 max-[64rem]:h-8"></SnowflakeLogo>}
                             href="https://www.snowflake.com"
                         ></SponsorLink>
                         <SponsorLink
-                            className="hover:bg-[#f5c518] hover:fill-[#161616] max-[64rem]:border-b"
+                            className="bg-[#f5c518] fill-[#161616] max-[64rem]:border-b"
                             logo={<IMDbLogo className="h-8"></IMDbLogo>}
                             href="https://www.imdb.com"
                         ></SponsorLink>
                         <SponsorLink
-                            className="hover:bg-[#0d062a] hover:fill-[#d10956] max-[64rem]:border-l-0"
+                            className="bg-[#0d062a] fill-[#d10956] max-[64rem]:border-l-0"
                             logo={<TheDataCityLogo className="h-12 max-[64rem]:h-10"></TheDataCityLogo>}
                             href="https://thedatacity.com"
                         ></SponsorLink>
                         <SponsorLink
-                            className="hover:bg-[#2ba7de]"
+                            className="bg-[#2ba7de] fill-white"
                             logo={<RebuildingSocietyLogo className="h-8 max-[64rem]:h-6"></RebuildingSocietyLogo>}
                             href="https://www.rebuildingsociety.com"
                         ></SponsorLink>
                     </div>
                     <div className="h-32 grid grid-cols-2 border-l border-r border-b border-white/50">
                         <SponsorLink
-                            className="hover:bg-[#4ef2ba] hover:fill-[#0a2136]"
+                            className="bg-[#4ef2ba] fill-[#0a2136]"
                             logo={<PexipLogo className="h-6"></PexipLogo>}
                             href="https://www.pexip.com"
                         ></SponsorLink>
                         <SponsorLink
-                            className="hover:bg-[#fc88c6] hover:fill-black"
+                            className="bg-[#fc88c6] fill-black"
                             logo={<GenioLogo className="h-7"></GenioLogo>}
                             href="https://genio.co"
                         ></SponsorLink>
                     </div>
                     <div className="h-24 grid grid-cols-2 border-l border-r border-b border-white/50">
                         <SponsorLink
-                            className="hover:bg-white hover:fill-[#d50c2d]"
+                            className="bg-white fill-[#d50c2d]"
                             logo={<HetznerLogo className="h-3"></HetznerLogo>}
                             href="https://www.hetzner.com"
                         ></SponsorLink>
                         <SponsorLink
-                            className="hover:bg-white hover:fill-[#0d457d]"
+                            className="bg-white fill-[#0d457d]"
                             logo={<AudaciaLogo className="h-4"></AudaciaLogo>}
                             href="https://audacia.co.uk"
                         ></SponsorLink>
@@ -95,7 +95,7 @@ export default function Page()
                 </div>
                 <div className="h-32 grid grid-cols-1 border border-white/50">
                     <SponsorLink
-                        className="hover:bg-[#B7A6FF] hover:fill-black"
+                        className="bg-[#B7A6FF] fill-black"
                         logo={<UoLLogo className="h-10"></UoLLogo>}
                         href="https://www.leeds.ac.uk"
                     ></SponsorLink>
