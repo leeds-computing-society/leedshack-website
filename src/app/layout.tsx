@@ -27,7 +27,7 @@ export default function RootLayout({
 }>)
 {
     return (
-        <html lang="en" >
+        <html lang="en">
             <head>
             </head>
             <body className={jetBrainsMono.className + " absolute h-full w-full m-0 p-0 bg-black"}>
@@ -35,6 +35,9 @@ export default function RootLayout({
                     <Background></Background>
                     <MouseHighlight></MouseHighlight>
                     <Header></Header>
+                    <a className="block max-w-[100px] min-w-[60px] fixed right-[50px] top-0 w-[10%] z-50" href="https://mlh.io/eu?utm_source=eu-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=black" target="_blank">
+                        <img className="w-full" src="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-white.svg" alt="Major League Hacking 2026 Hackathon Season"></img>
+                    </a>
                     <div className="min-h-[100vh] flex flex-col">
                         <div className="pt-14 grow flex flex-col">
                             {children}
