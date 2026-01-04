@@ -102,7 +102,7 @@ export const Header = () =>
 
     return (
         <div className="fixed h-14 w-full text-md z-50 text-white">
-            <div style={{ WebkitBackdropFilter: "blur(48px)", backdropFilter: "blur(48px)" }} className={`${HeaderTypeMap[headerType]} h-14 transition-header border-b border-white/50`}>
+            <div style={{ WebkitBackdropFilter: "blur(48px)", backdropFilter: "blur(48px)" }} className={`h-14 transition-header border-b border-white/50 ${HeaderTypeMap[headerType]}`}>
                 <div className="h-full flex justify-center items-center gap-6 max-[68rem]:hidden">
                     {headerItems.map((item, index) => <Link key={index} href={item.link} className={HeaderItemTypeMap[item.type]}>{item.text}</Link>)}
                 </div>
@@ -116,7 +116,7 @@ export const Header = () =>
                     </button>
                 </div>
             </div>
-            <div style={{ WebkitBackdropFilter: "blur(24px)", backdropFilter: "blur(48px)" }} className={`${HeaderTypeMap[headerType]} transition-navigation border-dashed w-full text-md overflow-clip border-b border-transparent flex flex-col gap-3 items-center ${menuOpen ? "h-[13.5rem] border-white/50" : "h-0 border-b-0"}`}>
+            <div style={{ WebkitBackdropFilter: "blur(24px)", backdropFilter: "blur(48px)" }} className={`transition-navigation border-dashed w-full text-md overflow-clip border-b border-transparent flex flex-col gap-3 items-center ${HeaderTypeMap[headerType]} ${menuOpen ? "h-[13.5rem] border-white/50" : "h-0"}`}>
                 {headerItems.map((item, index) => <button key={index} onClick={() => navigationClicked(item.link)} className={HeaderItemTypeMap[item.type] + " first:mt-6 last:mb-6 cursor-pointer"}>{item.text}</button>)}
             </div>
         </div>

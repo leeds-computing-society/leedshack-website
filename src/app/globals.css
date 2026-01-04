@@ -123,7 +123,12 @@
 
 html {
     scrollbar-width: thin;
-    scrollbar-color: rgba(255, 255, 255, 0.5) var(--color-brand-primary-500);
+    scrollbar-color: rgba(255, 255, 255, 0.5) var(--color-black);
+}
+
+::selection {
+    background: var(--color-leeds-hack-2026-primary-500);
+    color: var(--color-white);
 }
 
 .transition-blob {
@@ -325,7 +330,7 @@ html {
     }
 }
 
-.rs-logo-hover {
+/* .rs-logo-hover {
     .rs-logo-background {
         transition: fill 0.5s;
         fill: #ef0000;
@@ -339,10 +344,10 @@ html {
 
 .rs-logo-hover:hover {
     .rs-logo-background {
-        fill: #ef0000;
+        fill: #ef000000;
     }
 
-    .rs-logo-red {
+    .rs-logo-foreground {
         fill: #ffffff;
     }
-}
+} */

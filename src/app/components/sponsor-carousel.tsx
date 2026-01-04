@@ -86,8 +86,8 @@ export const SponsorCarousel = () =>
     // const { showAutoplayProgress } = useAutoplayProgress(emblaApi, progressNode);
 
     return (
-        <div className="w-full h-128 flex flex-row border-white/50 border">
-            <button onClick={() => { emblaApi?.scrollPrev(); }} className="w-12 transition-button shrink-0 h-full border-white/50 border-r bg-leeds-hack-2026-primary-500/25 hover:bg-leeds-hack-2026-primary-500/50 flex justify-center hover:cursor-pointer">
+        <div className="w-full h-fit flex flex-row border-white/50 border">
+            <button onClick={() => { emblaApi?.scrollPrev(); }} className="w-6 min-[48rem]:w-12 transition-button shrink-0 h-full border-white/50 border-r bg-white/10 hover:bg-white/20 flex justify-center items-center hover:cursor-pointer">
                 <ArrowLeft className="w-6 stroke-white"></ArrowLeft>
             </button>
 
@@ -95,12 +95,12 @@ export const SponsorCarousel = () =>
             <div className="h-full grow overflow-hidden" ref={emblaReference}>
                 <div className="h-full flex flex-row">
                     {SponsorCarouselItemList.map((item: SponsorCarouselItem, index: number) => (
-                        <div className="flex flex-col h-full w-[80%] mx-4 shrink-0 flex align-middle items-center bg-leeds-hack-2026-primary-500/10 border-white/50 border-l border-r" key={index}>
+                        <div className="flex flex-col h-full w-[90%] min-[48rem]:w-[80%] mx-4 shrink-0 flex align-middle items-center bg-white/5 border-white/50 border-l border-r" key={index}>
                             <div className={"h-32 border-white/50 border-b w-full flex justify-center items-center " + item.background}>
                                 {item.logo}
                                 {/* bg-black/50 */}
                             </div>
-                            <div className="m-6 grow flex justify-center items-center">
+                            <div className="py-4 px-4 min-[48rem]:px-6 grow text-sm min-[48rem]:text-md">
                                 {item.description}
                             </div>
                         </div>
@@ -108,7 +108,7 @@ export const SponsorCarousel = () =>
                 </div>
             </div>
 
-            <button onClick={() => { emblaApi?.scrollNext(); }} className="w-12 transition-button shrink-0 h-full border-white/50 border-l bg-leeds-hack-2026-primary-500/25 hover:bg-leeds-hack-2026-primary-500/50 flex justify-center hover:cursor-pointer">
+            <button onClick={() => { emblaApi?.scrollNext(); }} className="w-6 min-[48rem]:w-12 transition-button shrink-0 h-full border-white/50 border-l bg-white/10 hover:bg-white/20 flex justify-center items-center hover:cursor-pointer">
                 <ArrowRight className="w-6 stroke-white"></ArrowRight>
             </button>
         </div>
