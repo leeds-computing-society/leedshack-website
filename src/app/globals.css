@@ -231,7 +231,7 @@ html {
     }
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 68rem) {
     .link-leeds-computing-society {
         margin-left: 1.5rem;
 
@@ -245,4 +245,42 @@ html {
             background-color: var(--color-white);
         }
     }
+}
+
+.animation-accordion {
+    overflow: hidden;
+}
+
+.animation-accordion[data-state="open"] {
+    animation: slide-down 0.25s ease-out;
+}
+
+.animation-accordion[data-state="closed"] {
+    animation: slide-up 0.25s ease-out;
+}
+
+@keyframes slide-down {
+    from {
+        height: 0;
+    }
+    to {
+        height: var(--radix-accordion-content-height);
+    }
+}
+
+@keyframes slide-up {
+    from {
+        height: var(--radix-accordion-content-height);
+    }
+    to {
+        height: 0;
+    }
+}
+
+.accordion-arrow {
+    transition: transform 0.25s;
+}
+
+.accordion-trigger[data-state="open"] > .accordion-arrow {
+    transform: rotate(180deg);
 }

@@ -43,7 +43,12 @@ const headerItems: HeaderItem[] = [
         type: "leeds-hack-2026"
     },
     {
-        text: "Back To Leeds Computing Society",
+        text: "FAQ",
+        link: "/faq",
+        type: "leeds-hack-2026"
+    },
+    {
+        text: "Leeds Computing Society",
         link: "https://luucompsoc.co.uk",
         type: "leeds-computing-society"
     },
@@ -98,10 +103,10 @@ export const Header = () =>
     return (
         <div className="fixed h-14 w-full text-md z-50 text-white">
             <div style={{ WebkitBackdropFilter: "blur(48px)", backdropFilter: "blur(48px)" }} className={`${HeaderTypeMap[headerType]} h-14 transition-header border-b border-white/50`}>
-                <div className="h-full flex justify-center items-center gap-6 max-[48rem]:hidden">
+                <div className="h-full flex justify-center items-center gap-6 max-[68rem]:hidden">
                     {headerItems.map((item, index) => <Link key={index} href={item.link} className={HeaderItemTypeMap[item.type]}>{item.text}</Link>)}
                 </div>
-                <div className="h-full flex justify-start items-center min-[48rem]:hidden">
+                <div className="h-full flex justify-start items-center min-[68rem]:hidden">
                     <button aria-label="Navigation Menu Toggle" onClick={menuButtonClicked} className="p-4 cursor-pointer">
                         <svg className="stroke-white w-6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                             <path d="M3 5H21"></path>
@@ -111,7 +116,7 @@ export const Header = () =>
                     </button>
                 </div>
             </div>
-            <div style={{ WebkitBackdropFilter: "blur(24px)", backdropFilter: "blur(48px)" }} className={`${HeaderTypeMap[headerType]} transition-navigation border-dashed w-full text-md overflow-clip border-b border-transparent flex flex-col gap-3 items-center ${menuOpen ? "h-[11rem] border-white/50" : "h-0 border-b-0"}`}>
+            <div style={{ WebkitBackdropFilter: "blur(24px)", backdropFilter: "blur(48px)" }} className={`${HeaderTypeMap[headerType]} transition-navigation border-dashed w-full text-md overflow-clip border-b border-transparent flex flex-col gap-3 items-center ${menuOpen ? "h-[13.5rem] border-white/50" : "h-0 border-b-0"}`}>
                 {headerItems.map((item, index) => <button key={index} onClick={() => navigationClicked(item.link)} className={HeaderItemTypeMap[item.type] + " first:mt-6 last:mb-6 cursor-pointer"}>{item.text}</button>)}
             </div>
         </div>
