@@ -39,7 +39,7 @@ export default function RootLayout({
                     <Background></Background>
                     <MouseHighlight></MouseHighlight>
                     <Header></Header>
-                    <a className="block max-w-[100px] min-w-[60px] fixed right-[50px] top-0 w-[10%] z-50" href="https://mlh.io/eu?utm_source=eu-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=black" target="_blank">
+                    <a className="block w-12 min-[48rem]:w-24 fixed right-6 min-[48rem]:right-12 top-0 z-50" href="https://mlh.io/eu?utm_source=eu-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=black" target="_blank">
                         <img className="w-full" src="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-white.svg" alt="Major League Hacking 2026 Hackathon Season"></img>
                     </a>
                     <div className="min-h-[100vh] flex flex-col">

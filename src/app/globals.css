@@ -2,7 +2,7 @@
 
 @theme inline {
     --text-sm: 0.875rem;
-    --text-sm--line-height: 1rem;
+    --text-sm--line-height: 1.125rem;
     --text-sm--font-weight: 400;
 
     --text-base: 1rem;
@@ -283,4 +283,66 @@ html {
 
 .accordion-trigger[data-state="open"] > .accordion-arrow {
     transform: rotate(180deg);
+}
+
+.mlh-logo-hover {
+    .mlh-logo-dark {
+        transition: fill 0.5s;
+        fill: #242425;
+    }
+
+    .mlh-logo-red {
+        transition: fill 0.5s;
+        fill: #e73427;
+    }
+
+    .mlh-logo-yellow {
+        transition: fill 0.5s;
+        fill: #f8b92a;
+    }
+
+    .mlh-logo-blue {
+        transition: fill 0.5s;
+        fill: #1d539f;
+    }
+}
+
+.mlh-logo-hover:hover {
+    .mlh-logo-dark {
+        fill: #ffffff;
+    }
+
+    .mlh-logo-red {
+        fill: #ffffff;
+    }
+
+    .mlh-logo-yellow {
+        fill: #ffffff;
+    }
+
+    .mlh-logo-blue {
+        fill: #ffffff;
+    }
+}
+
+.rs-logo-hover {
+    .rs-logo-background {
+        transition: fill 0.5s;
+        fill: #ef0000;
+    }
+
+    .rs-logo-foreground {
+        transition: fill 0.5s;
+        fill: #ffffff;
+    }
+}
+
+.rs-logo-hover:hover {
+    .rs-logo-background {
+        fill: #ef0000;
+    }
+
+    .rs-logo-red {
+        fill: #ffffff;
+    }
 }

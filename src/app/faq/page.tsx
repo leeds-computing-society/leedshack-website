@@ -78,12 +78,12 @@ export default function Page()
                                 value={index.toString()}
                                 className="overflow-hidden">
                                 <Accordion.Header className="w-full flex border-white/50 border-b">
-                                    <Accordion.Trigger className="cursor-pointer accordion-trigger text-md w-full text-left flex items-center justify-between bg-white/15 px-6 py-4">
+                                    <Accordion.Trigger className="transition-button cursor-pointer accordion-trigger text-sm min-[48rem]:text-md w-full text-left flex items-center justify-between bg-white/10 hover:bg-white/20 px-6 py-4">
                                         {item.question}
                                         <ArrowDown className="accordion-arrow stroke-white h-6"></ArrowDown>
                                     </Accordion.Trigger>
                                 </Accordion.Header>
-                                <Accordion.Content className="animation-accordion overflow-clip bg-white/5 text-md border-b border-white/50">
+                                <Accordion.Content className="animation-accordion overflow-clip bg-white/5 text-sm min-[48rem]:text-md border-b border-white/50">
                                     {item.answer}
                                 </Accordion.Content>
                             </Accordion.Item>)

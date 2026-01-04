@@ -86,7 +86,7 @@ export const SponsorCarousel = () =>
     // const { showAutoplayProgress } = useAutoplayProgress(emblaApi, progressNode);
 
     return (
-        <div className="w-full h-128 flex flex-row border-white/50 border mb-48">
+        <div className="w-full h-128 flex flex-row border-white/50 border">
             <button onClick={() => { emblaApi?.scrollPrev(); }} className="w-12 transition-button shrink-0 h-full border-white/50 border-r bg-leeds-hack-2026-primary-500/25 hover:bg-leeds-hack-2026-primary-500/50 flex justify-center hover:cursor-pointer">
                 <ArrowLeft className="w-6 stroke-white"></ArrowLeft>
             </button>
