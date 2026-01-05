@@ -33,9 +33,9 @@ const headerItems: HeaderItem[] = [
         type: "leeds-hack-2026"
     },
     {
-        text: "LeedsHack 2025",
-        link: "/2025",
-        type: "leeds-hack-2025"
+        text: "FAQ",
+        link: "/faq",
+        type: "leeds-hack-2026"
     },
     {
         text: "Committee",
@@ -43,9 +43,9 @@ const headerItems: HeaderItem[] = [
         type: "leeds-hack-2026"
     },
     {
-        text: "FAQ",
-        link: "/faq",
-        type: "leeds-hack-2026"
+        text: "2025",
+        link: "/2025",
+        type: "leeds-hack-2025"
     },
     {
         text: "Leeds Computing Society",
