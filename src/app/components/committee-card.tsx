@@ -51,11 +51,11 @@ export const CommitteeCard = (properties: CommitteeCardProperties) =>
             </div>
             <div className="flex flex-col grow justify-between p-3">
                 <div>
-                    <div className="text-lg">{properties.name}</div>
-                    <div className="text-md">{properties.role}</div>
-                    <div className="text-md mt-3">{properties.roleDescription}</div>
+                    <div className="text-md min-[48rem]:text-lg">{properties.name}</div>
+                    <div className="text-sm min-[48rem]:text-md">{properties.role}</div>
+                    <div className="text-sm min-[48rem]:text-md mt-3">{properties.roleDescription}</div>
                 </div>
-                <div className="flex gap-3 justify-between mt-3 text-sm text-white/75">
+                <div className="flex gap-3 justify-between mt-3 text-xs min-[48rem]:text-sm text-white/75">
                     {properties.founder ? <div>Founder</div> : <div></div>}
                     {properties.lcs && <Link href="https://luucompsoc.co.uk" className="link link-leeds-hack-2026">CompSoc</Link>}
                 </div>

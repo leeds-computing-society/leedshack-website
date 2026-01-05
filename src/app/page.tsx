@@ -125,7 +125,7 @@ export default function Page()
                 />)
             }
             <div className="flex flex-col min-w-0 text-center mx-6 min-[64rem]:mx-12 min-[80rem]:mx-48 grow max-w-[96rem]">
-                <div className="border-l border-r border-dashed border-white/50 flex flex-col items-center gap-6 pt-24 pb-24">
+                <div className="border-l border-r border-dashed border-white/50 flex flex-col items-center gap-6 pt-24 pb-12">
                     <LeedsHack2026Logo className="fill-white max-w-128 px-6 min-[48rem]:px-0"></LeedsHack2026Logo>
                     <div className="mx-auto max-w-128 px-6 min-[48rem]:px-0 text-sm min-[48rem]:text-md text-white flex gap-6 min-[64rem]:gap-6 justify-between">
                         <div className="text-left">7th - 8th February</div>
@@ -142,6 +142,7 @@ export default function Page()
 
                 <div className="border-l border-r border-dashed border-white/50 flex flex-col items-center pb-12">
                     <div className="max-w-[48rem] text-sm min-[48rem]:text-md flex flex-col items-center gap-3">
+                        <div className="px-6 min-[48rem]:px-24 pb-12">The wait is finally over! We're excited to announce LeedsHack will be returning for 2026. All UK university students are welcome, whatever your skill level or hackathon experience.</div>
                         <div className="px-12 min-[48rem]:px-24">{registrationCountdown()}</div>
                         <div className="px-6 w-full">
                             <Link className="w-full block text-center py-4 border transition-button bg-white/10 border-white/50 hover:bg-leeds-hack-2026-primary-500 cursor-pointer" href="https://www.universe.com/events/leedshack-2026-tickets-N9LZPY">Apply For Your Ticket Now!</Link>

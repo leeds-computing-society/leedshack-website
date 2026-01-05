@@ -7,17 +7,17 @@ export default function Page()
         <div className="flex flex-row justify-center grow text-white">
             <h1 className="hidden">Committee</h1>
             <div className="flex flex-col mx-6 min-[64rem]:mx-12 min-[80rem]:mx-48 grow max-w-[96rem] border-l border-r border-dashed border-white/50">
-                <div className="py-3 px-6 min-[96rem]:px-48 mt-12 text-3xl border-t border-b border-white/50 bg-white/10">
+                <div className="py-3 px-6 min-[96rem]:px-48 mt-12 text-lg min-[48rem]:text-xl border-t border-b border-white/50 bg-white/10">
                     Meet the committee
                 </div>
-                <div className="py-6 px-6 min-[96rem]:px-48 text-md">
+                <div className="py-6 px-6 min-[96rem]:px-48 text-sm min-[48rem]:text-md">
                     Our committee work to ensure that LeedsHack runs smoothly and efficiently. They cooperate with sponsors, the University and School of Computing to make sure the event facilitates for everyone and provides a fun and challenging experience.
                 </div>
                 <div className="flex flex-row mb-12">
                     <div className="shrink-0 min-[48rem]:w-6 min-[96rem]:w-48 border-t border-b border-dashed border-white/50"></div>
                     {
                         committee.length === 0 ?
-                            <div className="grow text-md p-6 border border-white/50">
+                            <div className="grow text-sm min-[48rem]:text-md p-6 border border-white/50">
                                 Uh oh.. did someone delete the DB.
                             </div>
                             :
