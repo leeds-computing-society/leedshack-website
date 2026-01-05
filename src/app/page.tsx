@@ -21,6 +21,7 @@ import { ParallaxLogo } from "./components/sponsors/parallax-logo";
 import { LeedsHack2026LogoOld } from "./components/leeds-hack-2026-logo-old";
 import { RSLogo } from "./components/sponsors/rs-logo";
 import { MLHLogo } from "./components/sponsors/mlh-logo";
+import { RegistrationCountdown } from "./components/registration-countdown";
 
 const organisation: WithContext<Organization> = {
     "@context": "https://schema.org",
@@ -91,28 +92,6 @@ let structuredData: any[] = [
 
 export default function Page()
 {
-    const registrationCountdown = () =>
-    {
-        let now: Date = new Date();
-        let target: Date = new Date("2026-01-12T12:00:00Z");
-
-        let difference = target.getTime() - now.getTime();
-
-        if (difference <= 0) return "Registration is now closed.";
-
-        let seconds = Math.floor(difference / 1000);
-        let minutes = Math.floor(seconds / 60);
-        let hours = Math.floor(minutes / 60);
-        let days = Math.floor(hours / 24);
-
-        let remainingHours = hours % 24;
-        let remainingMinutes = minutes % 60;
-
-
-        if (days >= 1) return <div>Registration closes in <span className="text-[#a375ff]">{`${days} days, ${remainingHours} hours`}</span>.</div>;
-        return <div>Registration closes in <span className="text-[#FF526F]">{`${remainingHours} hours, ${remainingMinutes} minutes`}</span>.</div>;
-    };
-
     return (
         <div className="flex flex-row justify-center grow text-white">
             {
@@ -143,7 +122,7 @@ export default function Page()
                 <div className="border-l border-r border-dashed border-white/50 flex flex-col items-center pb-12">
                     <div className="max-w-[48rem] text-sm min-[48rem]:text-md flex flex-col items-center gap-3">
                         <div className="px-6 min-[48rem]:px-24 pb-12">The wait is finally over! We're excited to announce LeedsHack will be returning for 2026. All UK university students are welcome, whatever your skill level or hackathon experience.</div>
-                        <div className="px-12 min-[48rem]:px-24">{registrationCountdown()}</div>
+                        <div className="px-12 min-[48rem]:px-24"><RegistrationCountdown></RegistrationCountdown></div>
                         <div className="px-6 w-full">
                             <Link className="w-full block text-center py-4 border transition-button bg-white/10 border-white/50 hover:bg-leeds-hack-2026-primary-500 cursor-pointer" href="https://www.universe.com/events/leedshack-2026-tickets-N9LZPY">Apply For Your Ticket Now!</Link>
                         </div>
