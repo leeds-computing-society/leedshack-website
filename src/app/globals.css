@@ -2,7 +2,7 @@
 
 @theme inline {
     --text-sm: 0.875rem;
-    --text-sm--line-height: 1rem;
+    --text-sm--line-height: 1.125rem;
     --text-sm--font-weight: 400;
 
     --text-base: 1rem;
@@ -123,7 +123,12 @@
 
 html {
     scrollbar-width: thin;
-    scrollbar-color: rgba(255, 255, 255, 0.5) var(--color-brand-primary-500);
+    scrollbar-color: rgba(255, 255, 255, 0.5) var(--color-black);
+}
+
+::selection {
+    background: var(--color-leeds-hack-2026-primary-500);
+    color: var(--color-white);
 }
 
 .transition-blob {
@@ -231,7 +236,7 @@ html {
     }
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 68rem) {
     .link-leeds-computing-society {
         margin-left: 1.5rem;
 
@@ -246,3 +251,103 @@ html {
         }
     }
 }
+
+.animation-accordion {
+    overflow: hidden;
+}
+
+.animation-accordion[data-state="open"] {
+    animation: slide-down 0.25s ease-out;
+}
+
+.animation-accordion[data-state="closed"] {
+    animation: slide-up 0.25s ease-out;
+}
+
+@keyframes slide-down {
+    from {
+        height: 0;
+    }
+    to {
+        height: var(--radix-accordion-content-height);
+    }
+}
+
+@keyframes slide-up {
+    from {
+        height: var(--radix-accordion-content-height);
+    }
+    to {
+        height: 0;
+    }
+}
+
+.accordion-arrow {
+    transition: transform 0.25s;
+}
+
+.accordion-trigger[data-state="open"] > .accordion-arrow {
+    transform: rotate(180deg);
+}
+
+.mlh-logo-hover {
+    .mlh-logo-dark {
+        transition: fill 0.5s;
+        fill: #242425;
+    }
+
+    .mlh-logo-red {
+        transition: fill 0.5s;
+        fill: #e73427;
+    }
+
+    .mlh-logo-yellow {
+        transition: fill 0.5s;
+        fill: #f8b92a;
+    }
+
+    .mlh-logo-blue {
+        transition: fill 0.5s;
+        fill: #1d539f;
+    }
+}
+
+.mlh-logo-hover:hover {
+    .mlh-logo-dark {
+        fill: #ffffff;
+    }
+
+    .mlh-logo-red {
+        fill: #ffffff;
+    }
+
+    .mlh-logo-yellow {
+        fill: #ffffff;
+    }
+
+    .mlh-logo-blue {
+        fill: #ffffff;
+    }
+}
+
+/* .rs-logo-hover {
+    .rs-logo-background {
+        transition: fill 0.5s;
+        fill: #ef0000;
+    }
+
+    .rs-logo-foreground {
+        transition: fill 0.5s;
+        fill: #ffffff;
+    }
+}
+
+.rs-logo-hover:hover {
+    .rs-logo-background {
+        fill: #ef000000;
+    }
+
+    .rs-logo-foreground {
+        fill: #ffffff;
+    }
+} */

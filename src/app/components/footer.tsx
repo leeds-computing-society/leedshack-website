@@ -38,8 +38,11 @@ export const Footer = () =>
                             </svg>
                         }></FooterLink>
                     </div>
+                    <div className="text-sm">By registering for LeedsHack 2026 you agree to abide by the <Link href="https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md" className="underline underline-offset-2 decoration-2 decoration-leeds-hack-2026-primary-500">MLH Code of Conduct</Link>.</div>
                 </div>
             </div>
         </div>
     );
 };
+
+//([https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md](https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md))

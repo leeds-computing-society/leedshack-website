@@ -13,7 +13,7 @@ import { AudaciaLogo } from "@/app/components/sponsors/audacia-logo";
 import { UoLLogo } from "@/app/components/uol-logo";
 import { SponsorLink } from "@/app/components/sponsor-link";
 import { StatisticCard } from "@/app/components/statistic-card";
-import { LeedsHack2025LogoOld } from "../components/leeds-hack-2026-logo-old";
+import { LeedsHack2025LogoOld } from "../components/leeds-hack-2025-logo-old";
 
 export default function Page()
 {
