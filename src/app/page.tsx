@@ -121,7 +121,8 @@ export default function Page()
 
                 <div className="border-l border-r border-dashed border-white/50 flex flex-col items-center pb-12">
                     <div className="max-w-[48rem] text-sm min-[48rem]:text-md flex flex-col items-center gap-3">
-                        <div className="px-6 min-[48rem]:px-24 pb-12">The wait is finally over! We're excited to announce LeedsHack will be returning for 2026. All UK university students are welcome, whatever your skill level or hackathon experience.</div>
+                        <div className="px-6 min-[48rem]:px-24">The wait is finally over! We're excited to announce LeedsHack will be returning for 2026. All UK university students are welcome, whatever your skill level or hackathon experience.</div>
+                        <div className="px-6 min-[48rem]:px-24 pb-12">Find out more on our <Link href="/faq" className="underline underline-offset-2 decoration-2 decoration-leeds-hack-2026-primary-500">FAQ</Link>.</div>
                         <div className="px-12 min-[48rem]:px-24"><RegistrationCountdown></RegistrationCountdown></div>
                         <div className="px-6 w-full">
                             <Link className="w-full block text-center py-4 border transition-button bg-white/10 border-white/50 hover:bg-leeds-hack-2026-primary-500 cursor-pointer" href="https://www.universe.com/events/leedshack-2026-tickets-N9LZPY">Apply For Your Ticket Now!</Link>
