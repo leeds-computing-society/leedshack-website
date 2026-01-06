@@ -12,7 +12,7 @@ interface FAQItem
 const FAQItemList: FAQItem[] = [
     {
         question: "Who can participate?",
-        answer: <div className="px-6 min-[96rem]:px-48 py-4">Any UK university student.</div>
+        answer: <div className="px-6 min-[96rem]:px-48 py-4">Any UK university student over the age of 18.</div>
     },
     {
         question: "When is it?",
