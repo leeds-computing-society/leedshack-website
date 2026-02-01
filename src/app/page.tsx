@@ -122,12 +122,12 @@ export default function Page()
                 <div className="border-l border-r border-dashed border-white/50 flex flex-col items-center pb-12">
                     <div className="max-w-[48rem] text-sm min-[48rem]:text-md flex flex-col items-center gap-3">
                         <div className="px-6 min-[48rem]:px-24">The wait is finally over! We're excited to announce LeedsHack will be returning for 2026. All UK university students are welcome, whatever your skill level or hackathon experience.</div>
-                        <div className="px-6 min-[48rem]:px-24 pb-12">Find out more on our <Link href="/faq" className="underline underline-offset-2 decoration-2 decoration-leeds-hack-2026-primary-500">FAQ</Link>.</div>
+                        <div className="px-6 min-[48rem]:px-24 pb-6">Find out more on our <Link href="/faq" className="underline underline-offset-2 decoration-2 decoration-leeds-hack-2026-primary-500">FAQ</Link>.</div>
                         <div className="px-12 min-[48rem]:px-24"><RegistrationCountdown></RegistrationCountdown></div>
-                        <div className="px-6 w-full">
+                        {/* <div className="px-6 w-full">
                             <Link className="w-full block text-center py-4 border transition-button bg-white/10 border-white/50 hover:bg-leeds-hack-2026-primary-500 cursor-pointer" href="https://www.universe.com/events/leedshack-2026-tickets-N9LZPY">Apply For Your Ticket Now!</Link>
                         </div>
-                        <div className="text-xs px-12 min-[48rem]:px-24 text-white/50">* Registration does not guarantee a ticket to the event, allocation of tickets is random and will take place on Thursday 15th January.</div>
+                        <div className="text-xs px-12 min-[48rem]:px-24 text-white/50">* Registration does not guarantee a ticket to the event, allocation of tickets is random and will take place on Thursday 15th January.</div> */}
                     </div>
                 </div>
                 <Marquee autoFill={true} speed={40} className="bg-black/50 border-white/50 border-t border-l border-r border-b w-full h-24">
@@ -137,7 +137,7 @@ export default function Page()
                     <LigentiaLogo className="mr-24 fill-white h-7"></LigentiaLogo>
                     <ParallaxLogo className="mr-24 fill-white h-6"></ParallaxLogo>
                 </Marquee>
-                <div className="border-l border-r border-dashed border-white/50 flex flex-col items-center pt-12">
+                {/* <div className="border-l border-r border-dashed border-white/50 flex flex-col items-center pt-12">
                     <div className="max-w-[48rem] text-sm min-[48rem]:text-md flex flex-col items-center gap-3">
                         <div className="px-6 min-[48rem]:px-24 text-lg min-[48rem]:text-xl">Team Registration</div>
                         <div className="px-6 min-[48rem]:px-24">If you have a group of people that you wouldn't want to do LeedsHack without then fill out this additional form to indicate you would like to be treated as a team.</div>
@@ -145,9 +145,9 @@ export default function Page()
                             <Link className="w-full block text-center py-4 border transition-button bg-white/10 border-white/50 hover:bg-leeds-hack-2026-primary-500 cursor-pointer" href="https://forms.gle/GycdWX2e9x3zdTep9">Register A Team</Link>
                         </div>
                     </div>
-                </div>
-                <div className="border-l border-r border-dashed border-white/50 pt-12">
-                    <div className="border-t border-dashed border-white/50 flex flex-col items-center pt-12 pb-12">
+                </div> */}
+                <div className="border-l border-r border-dashed border-white/50">
+                    <div className="flex flex-col items-center pt-12 pb-12">
                         <div className="max-w-[48rem] text-sm min-[48rem]:text-md flex flex-col items-center gap-3">
                             <div className="px-6 min-[48rem]:px-24 text-lg min-[48rem]:text-xl">Sponsors</div>
                             <div className="px-6 min-[48rem]:px-24">Find out more about the sponsors making LeedsHack 2026 possible.</div>
@@ -177,7 +177,7 @@ export default function Page()
                         href="https://uk.rs-online.com/web"
                     ></SponsorLink>
                 </div>
-                <div className="border-l border-r border-dashed border-white/50 flex flex-col items-center pt-12">
+                {/* <div className="border-l border-r border-dashed border-white/50 flex flex-col items-center pt-12">
                     <div className="max-w-[48rem] text-sm min-[48rem]:text-md flex flex-col items-center gap-3">
                         <div className="px-6 min-[48rem]:px-24 text-lg min-[48rem]:text-xl">Volunteer</div>
                         <div className="px-6 min-[48rem]:px-24">We are looking for people to help out with general volunteering, mentoring and judging. Find out more through the links below.</div>
@@ -189,7 +189,7 @@ export default function Page()
                         </div>
                         <div className="text-xs px-12 min-[48rem]:px-24 text-white/50">If you are interested in helping out as a judge please email <Link href="mailto:leedshack@luucompsoc.co.uk" className="underline underline-offset-2 decoration-2 decoration-leeds-hack-2026-primary-500">leedshack@luucompsoc.co.uk</Link>. Please note for this role we are looking for professionals in the technology sector (such as software engineers, product managers, QA engineers, and designers).</div>
                     </div>
-                </div>
+                </div> */}
                 <div className="border-l border-r border-dashed border-white/50 h-12">
                 </div>
 
