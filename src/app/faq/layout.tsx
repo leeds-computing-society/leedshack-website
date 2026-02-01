@@ -3,7 +3,7 @@ import { defaultMetadata } from "@/app/metadata";
 
 export const metadata: Metadata = {
     ...defaultMetadata,
-    title: "LeedsHack 2025 | LeedsHack",
+    title: "FAQ | LeedsHack",
     description: "Thank you to all who attended and supported LeedsHack 2025! Your support and enthusiasm allowed the first University of Leeds hackathon to be a big success."
 };
 
