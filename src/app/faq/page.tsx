@@ -32,34 +32,19 @@ const FAQItemList: FAQItem[] = [
     },
     {
         question: "When can I register to participate?",
-        answer: <div className="px-6 min-[96rem]:px-48 py-4">Registration opens on Monday 5th January at 12:00 PM and will close on Monday 12th January at 12:00 PM.</div>
+        answer: <div className="px-6 min-[96rem]:px-48 py-4">Registration is now closed.</div>
     },
     {
         question: "How do I register to participate?",
-        answer: <div className="px-6 min-[96rem]:px-48 py-4">Registration is done through <Link href="https://www.universe.com/events/leedshack-2026-tickets-N9LZPY" className="underline underline-offset-2 decoration-2 decoration-leeds-hack-2026-primary-500">Universe</Link>.</div>
+        answer: <div className="px-6 min-[96rem]:px-48 py-4">Registration is not closed.</div>
     },
     {
         question: "How do I register a team?",
-        answer: <div className="flex flex-col gap-3 px-6 min-[96rem]:px-48 py-4">
-            <div>All members of the team must apply for a ticket on <Link href="https://www.universe.com/events/leedshack-2026-tickets-N9LZPY" className="underline underline-offset-2 decoration-2 decoration-leeds-hack-2026-primary-500">Universe</Link>.</div>
-            <div>Once all members have applied for a ticket you can use the <Link href="https://forms.gle/GycdWX2e9x3zdTep9" className="underline underline-offset-2 decoration-2 decoration-leeds-hack-2026-primary-500">Team Registration Form</Link> to inform us of your team preference. Please keep in mind that if you register a team either all team members will be allocated a ticket, or no one will be allocated a ticket. This does not affect your chance of being assigned a ticket, but ensures that your whole group will be able to attend.</div>
-            <div>Each team may only fill out the form once and each person may only be part of one team. Duplicate submissions will be ignored.</div>
-            <div>Team registration opens on Monday 5th January at 12:00 PM and will close on Monday 12th January at 12:00 PM.</div>
-        </div>
+        answer: <div className="px-6 min-[96rem]:px-48 py-4">Registration is not closed.</div>
     },
     {
         question: "How do I volunteer?",
-        answer: <div className="flex flex-col gap-3 px-6 min-[96rem]:px-48 py-4">
-            <div>Volunteer</div>
-            <div>We're looking for volunteers for LeedsHack 2026. This is a great opportunity for anyone looking to give back to the student community and gain some volunteering experience. You don't have to be a computer science student and no technical skills are required, we are looking for people with a range of transferable skills!</div>
-            <div>Apply before Saturday 17th January at 12:00 PM using the <Link href="https://forms.gle/XGLrbFsoZ6vULu7X9" className="underline underline-offset-2 decoration-2 decoration-leeds-hack-2026-primary-500">Application Form</Link>.</div>
-            <div className="mt-9">Mentor</div>
-            <div>We're looking for technical mentors for LeedsHack 2026. This is a great opportunity for experienced students (such as Master’s or PhD students).</div>
-            <div>Apply before Saturday 17th January at 12:00 PM using the <Link href="https://forms.gle/mZLsZhMmfQhY2FDj7" className="underline underline-offset-2 decoration-2 decoration-leeds-hack-2026-primary-500">Application Form</Link>.</div>
-            <div className="mt-9">Judge</div>
-            <div>We're looking for professionals in the technology sector (such as software engineers, product managers, QA engineers, and designers) who think they could spot a well-designed or innovative project. As a thank you we provide our judges with lunch and some LeedsHack merchandise! No experience of hackathons/judging is necessary as we'll provide a briefing beforehand. This is a great way to support student innovation and see what the next generation is building.</div>
-            <div>If you're interested, please get in touch at <Link href="mailto:leedshack@luucompsoc.co.uk" className="underline underline-offset-2 decoration-2 decoration-leeds-hack-2026-primary-500">leedshack@luucompsoc.co.uk</Link>.</div>
-        </div>
+        answer: <div className="px-6 min-[96rem]:px-48 py-4">Registration is not closed.</div>
     },
     {
         question: "What if I am allocated a ticket but can no longer attend?",
@@ -84,7 +69,8 @@ const FAQItemList: FAQItem[] = [
     {
         question: "What are the rules around what I build?",
         answer: <div className="flex flex-col gap-3 px-6 min-[96rem]:px-48 py-4">
-            <div>We will not allow projects which make use of resources unavailable to others at the event such as personal hardware devices. This makes sure the event is fair to everyone.</div>
+            <div>Any project must be built within the 24 hours, we will not allow submissions that have been completed in advance of the hackathon.</div>
+            <div>You may bring custom hardware for use at the hackathon given that it is in an out of box state.</div>
             <div>We also suggest you familiarise yourself with the <Link href="https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md" className="underline underline-offset-2 decoration-2 decoration-leeds-hack-2026-primary-500">MLH Code of Conduct</Link>.</div>
         </div>
     },
