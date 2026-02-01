@@ -36,15 +36,15 @@ const FAQItemList: FAQItem[] = [
     },
     {
         question: "How do I register to participate?",
-        answer: <div className="px-6 min-[96rem]:px-48 py-4">Registration is not closed.</div>
+        answer: <div className="px-6 min-[96rem]:px-48 py-4">Registration is now closed.</div>
     },
     {
         question: "How do I register a team?",
-        answer: <div className="px-6 min-[96rem]:px-48 py-4">Registration is not closed.</div>
+        answer: <div className="px-6 min-[96rem]:px-48 py-4">Registration is now closed.</div>
     },
     {
         question: "How do I volunteer?",
-        answer: <div className="px-6 min-[96rem]:px-48 py-4">Registration is not closed.</div>
+        answer: <div className="px-6 min-[96rem]:px-48 py-4">Registration is now closed.</div>
     },
     {
         question: "What if I am allocated a ticket but can no longer attend?",
