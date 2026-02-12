@@ -22,6 +22,12 @@ import { LeedsHack2026LogoOld } from "./components/leeds-hack-2026-logo-old";
 import { RSLogo } from "./components/sponsors/rs-logo";
 import { MLHLogo } from "./components/sponsors/mlh-logo";
 import { RegistrationCountdown } from "./components/registration-countdown";
+import { CornerBox } from "./components/corner-box";
+import { ValueBox } from "./components/value-box";
+import { WinnerCarousel } from "./components/winner-carousel";
+import Image from "next/image";
+import { Power } from "./components/icons/power";
+import { LeedsHackText } from "./components/leeds-hack-text";
 
 const organisation: WithContext<Organization> = {
     "@context": "https://schema.org",
@@ -104,32 +110,56 @@ export default function Page()
                 />)
             }
             <div className="flex flex-col min-w-0 text-center mx-6 min-[64rem]:mx-12 min-[80rem]:mx-48 grow max-w-[96rem]">
-                <div className="border-l border-r border-dashed border-white/50 flex flex-col items-center gap-6 pt-24 pb-12">
+                {/* <div className="border-l border-r border-dashed border-white/50 flex flex-col items-center gap-6 pt-24 pb-12">
                     <LeedsHack2026Logo className="fill-white max-w-128 px-6 min-[48rem]:px-0"></LeedsHack2026Logo>
-                    <div className="mx-auto max-w-128 px-6 min-[48rem]:px-0 text-sm min-[48rem]:text-md text-white flex gap-6 min-[64rem]:gap-6 justify-between">
-                        <div className="text-left">7th - 8th February</div>
-                        <Link href="https://maps.app.goo.gl/mcv9zr9xncYnC7L77" className="text-right underline underline-offset-2 decoration-2 decoration-leeds-hack-2026-primary-500">Sir William Henry Bragg Building</Link>
-                    </div>
-                    {/* <div className="mt-12 flex flex-col items-center w-fit mx-auto">
-                        {registrationCountdown()}
-                        <Link className="w-fit block text-center mt-3 mb-3 px-48 py-4 border transition-button bg-white/10 border-white/50 hover:bg-leeds-hack-2026-primary-500 cursor-pointer text-md" href="https://www.universe.com/events/leedshack-2026-tickets-N9LZPY">Apply For Your Ticket Now</Link>
-                        <div className="text-sm">* Registering does not guarantee a ticket to the event,</div>
-                        <div className="text-sm">allocation of tickets is random and will take place</div>
-                        <div className="text-sm">on Thursday 15th January.</div>
-                    </div> */}
-                </div>
-
-                <div className="border-l border-r border-dashed border-white/50 flex flex-col items-center pb-12">
-                    <div className="max-w-[48rem] text-sm min-[48rem]:text-md flex flex-col items-center gap-3">
-                        <div className="px-6 min-[48rem]:px-24">The wait is finally over! We're excited to announce LeedsHack will be returning for 2026. All UK university students are welcome, whatever your skill level or hackathon experience.</div>
-                        <div className="px-6 min-[48rem]:px-24 pb-6">Find out more on our <Link href="/faq" className="underline underline-offset-2 decoration-2 decoration-leeds-hack-2026-primary-500">FAQ</Link>.</div>
-                        <div className="px-12 min-[48rem]:px-24"><RegistrationCountdown></RegistrationCountdown></div>
-                        {/* <div className="px-6 w-full">
-                            <Link className="w-full block text-center py-4 border transition-button bg-white/10 border-white/50 hover:bg-leeds-hack-2026-primary-500 cursor-pointer" href="https://www.universe.com/events/leedshack-2026-tickets-N9LZPY">Apply For Your Ticket Now!</Link>
+                </div> */}
+                <div className="border-l border-r border-dashed border-white/50 flex flex-col items-center gap-6 pt-12 min-[48rem]:pt-24 pb-12 min-[48rem]:pb-24">
+                    <div className="flex flex-row gap-1.5 min-[48rem]:gap-6">
+                        <Power className="shrink-0 w-9 h-9 mt-0.5 min-[48rem]:w-22 min-[48rem]:h-22 min-[48rem]:pt-2"></Power>
+                        <div className="flex flex-col items-start text-leeds-hack-small min-[48rem]:text-leeds-hack">
+                            <LeedsHackText></LeedsHackText>
                         </div>
-                        <div className="text-xs px-12 min-[48rem]:px-24 text-white/50">* Registration does not guarantee a ticket to the event, allocation of tickets is random and will take place on Thursday 15th January.</div> */}
                     </div>
                 </div>
+                <div className="border-l border-r border-dashed border-white/50 flex flex-col items-center pb-12">
+                    <div className="max-w-[48rem] text-md min-[48rem]:text-lg flex flex-col items-center gap-3">
+                        <div className="px-6 min-[48rem]:px-24">Thank you to everyone who attended LeedsHack 2026! It was an absolute blast to see the amazing projects you all created, and we enjoyed meeting every one of you.</div>
+                        <div className="px-6 min-[48rem]:px-24">Here's some stats from the weekend.</div>
+                    </div>
+                </div>
+                <div className="grid grid-cols-1 min-[32rem]:grid-cols-3 border-l border-t border-white/50 bg-white/10">
+                    <CornerBox className="relative border-r border-white/50 py-6 px-1.5 min-[48rem]:px-6">
+                        <div className="text-sm min-[48rem]:text-lg">Hackers</div>
+                        <ValueBox className="text-xl min-[48rem]:text-4xl" value="171"></ValueBox>
+                    </CornerBox>
+                    <CornerBox className="relative border-r max-[32rem]:border-t border-white/50 py-6 px-1.5 min-[48rem]:px-6">
+                        <div className="text-sm min-[48rem]:text-lg">First Timers</div>
+                        <ValueBox className="text-xl min-[48rem]:text-4xl" value="82"></ValueBox>
+                    </CornerBox>
+                    <CornerBox className="relative border-r max-[32rem]:border-t border-white/50 py-6 px-1.5 min-[48rem]:px-6">
+                        <div className="text-sm min-[48rem]:text-lg">Prizes</div>
+                        <ValueBox className="text-xl min-[48rem]:text-4xl" value="2000" prefix="£" suffix="+"></ValueBox>
+                    </CornerBox>
+                </div>
+                <div className="grid grid-cols-2 min-[32rem]:grid-cols-4 border-l border-t border-white/50 bg-white/10">
+                    <CornerBox className="relative border-r border-white/50 py-6 px-1.5 min-[48rem]:px-6">
+                        <div className="text-sm min-[48rem]:text-lg">Volunteers</div>
+                        <ValueBox className="text-xl min-[48rem]:text-4xl" value="30"></ValueBox>
+                    </CornerBox>
+                    <CornerBox className="relative border-r border-white/50 py-6 px-1.5 min-[48rem]:px-6">
+                        <div className="text-sm min-[48rem]:text-lg">Sponsors</div>
+                        <ValueBox className="text-xl min-[48rem]:text-4xl" value="6"></ValueBox>
+                    </CornerBox>
+                    <CornerBox className="relative border-r max-[32rem]:border-t border-white/50 py-6 px-1.5 min-[48rem]:px-6">
+                        <div className="text-sm min-[48rem]:text-lg">UoL Students</div>
+                        <ValueBox className="text-xl min-[48rem]:text-4xl" value="135"></ValueBox>
+                    </CornerBox>
+                    <CornerBox className="relative border-r max-[32rem]:border-t border-white/50 py-6 px-1.5 min-[48rem]:px-6">
+                        <div className="text-sm min-[48rem]:text-lg">External Students</div>
+                        <ValueBox className="text-xl min-[48rem]:text-4xl" value="36"></ValueBox>
+                    </CornerBox>
+                </div>
+                <Image className="border-t border-l border-r border-white/50" alt="LeedsHack 2026 attendees" src="/leeds-hack/2026-main.jpg" width={2048} height={1024} />
                 <Marquee autoFill={true} speed={40} className="bg-black/50 border-white/50 border-t border-l border-r border-b w-full h-24">
                     <PwCLogo className="mr-24 fill-white h-8"></PwCLogo>
                     <GenioLogo className="mr-24 fill-white h-8"></GenioLogo>
@@ -137,6 +167,30 @@ export default function Page()
                     <LigentiaLogo className="mr-24 fill-white h-7"></LigentiaLogo>
                     <ParallaxLogo className="mr-24 fill-white h-6"></ParallaxLogo>
                 </Marquee>
+                <div className="border-l border-r border-dashed border-white/50">
+                    <div className="flex flex-col items-center pt-12 pb-12">
+                        <div className="max-w-[48rem] text-md min-[48rem]:text-lg flex flex-col items-center gap-3">
+                            <div className="px-6 min-[48rem]:px-24 text-lg min-[48rem]:text-xl">Congratulations!</div>
+                            <div className="px-6 min-[48rem]:px-24">Well done to all the winners from this year's LeedsHack. Check out the awesome projects they created in just 24 hours.</div>
+                        </div>
+                    </div>
+                </div>
+                <WinnerCarousel></WinnerCarousel>
+                <div className="border-l border-r border-dashed border-white/50">
+                    <div className="flex flex-col items-center pt-12 pb-12">
+                        <div className="max-w-[48rem] text-md min-[48rem]:text-lg flex flex-col items-center gap-3">
+                            <div className="px-6 min-[48rem]:px-24">You can also check out all the other amazing projects on our <Link href="https://leedshack-2026.devpost.com/project-gallery" className="text-right underline underline-offset-2 decoration-2 decoration-leeds-hack-2026-primary-500">Devpost</Link>.</div>
+                        </div>
+                    </div>
+                </div>
+                <div className="grid grid-cols-5 border border-white/50">
+                    <Image className="col-span-3 h-full object-cover" alt="Attendees showing their work to a judge at LeedsHack 2025" src="/leeds-hack/2026-1.jpg" width={1536} height={1024} />
+                    <Image className="border-l border-white/50 col-span-2 h-full w-full object-cover" alt="Attendees working on their hackathon project at LeedsHack 2025" src="/leeds-hack/2026-3.jpg" width={1024} height={1024} />
+                </div>
+                <div className="grid grid-cols-5 border-l border-r border-b border-white/50">
+                    <Image className="h-full w-full col-span-2 object-cover" alt="Attendees showing their work to a judge at LeedsHack 2025" src="/leeds-hack/2026-2.jpg" width={1536} height={1024} />
+                    <Image className="border-l border-white/50 col-span-3 h-full object-cover" alt="Attendees working on their hackathon project at LeedsHack 2025" src="/leeds-hack/2026-4.jpg" width={1024} height={1024} />
+                </div>
                 {/* <div className="border-l border-r border-dashed border-white/50 flex flex-col items-center pt-12">
                     <div className="max-w-[48rem] text-sm min-[48rem]:text-md flex flex-col items-center gap-3">
                         <div className="px-6 min-[48rem]:px-24 text-lg min-[48rem]:text-xl">Team Registration</div>
@@ -148,15 +202,15 @@ export default function Page()
                 </div> */}
                 <div className="border-l border-r border-dashed border-white/50">
                     <div className="flex flex-col items-center pt-12 pb-12">
-                        <div className="max-w-[48rem] text-sm min-[48rem]:text-md flex flex-col items-center gap-3">
-                            <div className="px-6 min-[48rem]:px-24 text-lg min-[48rem]:text-xl">Sponsors</div>
-                            <div className="px-6 min-[48rem]:px-24">Find out more about the sponsors making LeedsHack 2026 possible.</div>
+                        <div className="max-w-[48rem] text-md min-[48rem]:text-lg flex flex-col items-center gap-3">
+                            <div className="px-6 min-[48rem]:px-24 text-lg min-[48rem]:text-xl">Thanks To Our Sponsors</div>
+                            <div className="px-6 min-[48rem]:px-24">Find out more about the sponsors who made LeedsHack 2026 possible.</div>
                         </div>
                     </div>
                 </div>
                 <SponsorCarousel></SponsorCarousel>
                 <div className="border-l border-r border-dashed border-white/50 flex flex-col items-center py-12">
-                    <div className="max-w-[48rem] text-sm min-[48rem]:text-md flex flex-col items-center gap-3">
+                    <div className="max-w-[48rem] text-md min-[48rem]:text-lg flex flex-col items-center gap-3">
                         <div className="px-6 min-[48rem]:px-24 text-lg min-[48rem]:text-xl">Partners</div>
                     </div>
                 </div>

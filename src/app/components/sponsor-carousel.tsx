@@ -102,12 +102,12 @@ export const SponsorCarousel = () =>
             <div className="h-full grow overflow-hidden" ref={emblaReference}>
                 <div className="h-full flex flex-row">
                     {SponsorCarouselItemList.map((item: SponsorCarouselItem, index: number) => (
-                        <div className="flex flex-col h-full w-[90%] min-[48rem]:w-[80%] mx-4 shrink-0 flex align-middle items-center bg-white/5 border-white/50 border-l border-r" key={index}>
+                        <div className="flex flex-col h-full w-[90%] min-[48rem]:w-[70%] mx-4 shrink-0 flex align-middle items-center bg-white/5 border-white/50 border-l border-r" key={index}>
                             <Link className={"h-32 border-white/50 border-b w-full flex justify-center items-center " + item.background} href={item.link}>
                                 {item.logo}
                                 {/* bg-black/50 */}
                             </Link>
-                            <div className="py-4 px-4 min-[48rem]:px-6 grow text-sm min-[48rem]:text-md">
+                            <div className="py-4 px-4 min-[48rem]:px-6 grow text-md min-[48rem]:text-lg">
                                 {item.description}
                             </div>
                         </div>
