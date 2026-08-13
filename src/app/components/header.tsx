@@ -140,6 +140,7 @@ export const Header = () => {
         <div className="h-full flex justify-center items-center gap-6 max-[68rem]:hidden">
           {headerItems.map((item, index) => {
             if (item.children) {
+              const children = item.children;
               return (
                 <div
                   key={index}
@@ -159,7 +160,7 @@ export const Header = () => {
                         backdropFilter: "blur(24px)",
                       }}
                     >
-                      {item.children.map((child, childIndex) => (
+                      {children.map((child, childIndex) => (
                         <div
                           key={childIndex}
                           className="flex flex-col items-center"
@@ -171,7 +172,7 @@ export const Header = () => {
                           >
                             {child.text}
                           </Link>
-                          {childIndex !== item.children.length - 1 && (
+                          {childIndex !== children.length - 1 && (
                             <div className="w-24 h-px bg-white/50"></div>
                           )}
                         </div>
@@ -222,6 +223,7 @@ export const Header = () => {
       >
         {headerItems.map((item, index) => {
           if (item.children) {
+            const children = item.children;
             return (
               <div key={index} className="flex flex-col items-center w-full">
                 <button
@@ -238,7 +240,7 @@ export const Header = () => {
                   className="transition-navigation overflow-clip flex flex-col items-center gap-3 w-full"
                   style={{ height: mobilePastEventsOpen ? "auto" : "0" }}
                 >
-                  {item.children.map((child, childIndex) => (
+                  {children.map((child, childIndex) => (
                     <button
                       key={childIndex}
                       onClick={() => navigationClicked(child.link)}
