@@ -31,6 +31,12 @@ interface HeaderItem {
   link: string;
   type: HeaderItemType;
   divider?: boolean;
+  children?: HeaderSubItem[];
+}
+
+interface HeaderSubItem {
+  text: string;
+  link: string;
 }
 
 const headerItems: HeaderItem[] = [
@@ -39,7 +45,6 @@ const headerItems: HeaderItem[] = [
     link: "/",
     type: "leeds-hack-2027",
   },
-
   {
     text: "FAQ",
     link: "/faq",
@@ -51,15 +56,20 @@ const headerItems: HeaderItem[] = [
     type: "leeds-hack-2027",
   },
   {
-    text: "2026",
-    link: "/2026",
+    text: "Past Events",
+    link: "",
     type: "leeds-hack-2026",
     divider: true,
-  },
-  {
-    text: "2025",
-    link: "/2025",
-    type: "leeds-hack-2025",
+    children: [
+      {
+        text: "2026",
+        link: "/2026",
+      },
+      {
+        text: "2025",
+        link: "/2025",
+      },
+    ],
   },
   {
     text: "Leeds Computing Society",
@@ -82,6 +92,9 @@ export const Header = () => {
   let pathname = usePathname();
   let router = useRouter();
   let [menuOpen, setMenuOpen] = useState<boolean>(false);
+  let [pastEventsOpen, setPastEventsOpen] = useState<boolean>(false);
+  let [mobilePastEventsOpen, setMobilePastEventsOpen] =
+    useState<boolean>(false);
   let [headerType, setHeaderType] = useState<HeaderType>("leeds-hack-2026");
 
   let menuButtonClicked = () => {
@@ -125,15 +138,61 @@ export const Header = () => {
         className={`h-14 transition-header border-b border-white/50 ${HeaderTypeMap[headerType]}`}
       >
         <div className="h-full flex justify-center items-center gap-6 max-[68rem]:hidden">
-          {headerItems.map((item, index) => (
-            <Link
-              key={index}
-              href={item.link}
-              className={`${HeaderItemTypeMap[item.type]} ${item.divider ? "divider" : ""}`}
-            >
-              {item.text}
-            </Link>
-          ))}
+          {headerItems.map((item, index) => {
+            if (item.children) {
+              const children = item.children;
+              return (
+                <div
+                  key={index}
+                  className={`relative ${item.divider ? "divider" : ""}`}
+                >
+                  <button
+                    onClick={() => setPastEventsOpen(!pastEventsOpen)}
+                    className={`${HeaderItemTypeMap[item.type]} appearance-none border-none bg-transparent cursor-pointer`}
+                  >
+                    {item.text}
+                  </button>
+                  {pastEventsOpen && (
+                    <div
+                      className="absolute top-full left-1/2 -translate-x-1/2 mt-4 flex flex-col border border-white/50 min-w-[10rem] bg-black/25 py-2"
+                      style={{
+                        WebkitBackdropFilter: "blur(24px)",
+                        backdropFilter: "blur(24px)",
+                      }}
+                    >
+                      {children.map((child, childIndex) => (
+                        <div
+                          key={childIndex}
+                          className="flex flex-col items-center"
+                        >
+                          <Link
+                            href={child.link}
+                            onClick={() => setPastEventsOpen(false)}
+                            className="px-6 py-3 text-center hover:bg-white/15 transition-colors duration-200 w-full"
+                          >
+                            {child.text}
+                          </Link>
+                          {childIndex !== children.length - 1 && (
+                            <div className="w-24 h-px bg-white/50"></div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              );
+            }
+
+            return (
+              <Link
+                key={index}
+                href={item.link}
+                className={`${HeaderItemTypeMap[item.type]} ${item.divider ? "divider" : ""}`}
+              >
+                {item.text}
+              </Link>
+            );
+          })}
         </div>
         <div className="h-full flex justify-start items-center min-[68rem]:hidden">
           <button
@@ -160,21 +219,55 @@ export const Header = () => {
           WebkitBackdropFilter: "blur(24px)",
           backdropFilter: "blur(48px)",
         }}
-        className={`transition-navigation border-dashed w-full text-md overflow-clip border-b border-transparent flex flex-col gap-3 items-center ${HeaderTypeMap[headerType]} ${menuOpen ? "h-[13.5rem] border-white/50" : "h-0"}`}
+        className={`transition-navigation border-dashed w-full text-md overflow-clip border-b border-transparent flex flex-col gap-3 items-center ${HeaderTypeMap[headerType]} ${menuOpen ? "h-auto border-white/50" : "h-0"}`}
       >
-        {headerItems.map((item, index) => (
-          <button
-            key={index}
-            onClick={() => navigationClicked(item.link)}
-            className={
-              HeaderItemTypeMap[item.type] +
-              (item.divider ? " divider" : "") +
-              " first:mt-6 last:mb-6 cursor-pointer"
-            }
-          >
-            {item.text}
-          </button>
-        ))}
+        {headerItems.map((item, index) => {
+          if (item.children) {
+            const children = item.children;
+            return (
+              <div key={index} className="flex flex-col items-center w-full">
+                <button
+                  onClick={() => setMobilePastEventsOpen(!mobilePastEventsOpen)}
+                  className={
+                    HeaderItemTypeMap[item.type] +
+                    (item.divider ? " divider" : "") +
+                    " first:mt-6 last:mb-6 cursor-pointer appearance-none border-none bg-transparent"
+                  }
+                >
+                  {item.text}
+                </button>
+                <div
+                  className="transition-navigation overflow-clip flex flex-col items-center gap-3 w-full"
+                  style={{ height: mobilePastEventsOpen ? "auto" : "0" }}
+                >
+                  {children.map((child, childIndex) => (
+                    <button
+                      key={childIndex}
+                      onClick={() => navigationClicked(child.link)}
+                      className="link cursor-pointer text-white/70"
+                    >
+                      {child.text}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            );
+          }
+
+          return (
+            <button
+              key={index}
+              onClick={() => navigationClicked(item.link)}
+              className={
+                HeaderItemTypeMap[item.type] +
+                (item.divider ? " divider" : "") +
+                " first:mt-6 last:mb-6 cursor-pointer"
+              }
+            >
+              {item.text}
+            </button>
+          );
+        })}
       </div>
     </div>
   );
