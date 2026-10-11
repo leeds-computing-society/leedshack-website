@@ -1,0 +1,20 @@
+[
+  {
+    "image": "/committee/Rachel-Sahay.webp",
+    "name": "Rachel Sahay"
+  },
+  {
+    "image": "/committee/Rory-Edmonds.webp",
+    "name": "Rory Edmonds",
+    "lcs": true
+  },
+  {
+    "image": "/committee/Otise-Ojuri.webp",
+    "name": "Otise Ojuri"
+  },
+  {
+    "image": "/committee/oleksandr-tunik.webp",
+    "name": "Oleksandr Tunik",
+    "lcs": true
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "image": "/committee/kai-ling-hoo.webp",
+    "name": "Kai Ling Hoo",
+    "role": "Lead Organiser",
+    "roleDescription": "Last year's Design and Marketing Lead, this year overseeing all aspects of the LeedsHack preparation and on-the-day running including sponsorship, logistics, participant experience and general management of committee.",
+    "lcs": true
+  },
+  {
+    "image": "/committee/Charlie-Jheeta.webp",
+    "name": "Charlie Jheeta",
+    "role": "Logistics Lead",
+    "roleDescription": "Co-ordinates all operational aspects of LeedsHack including health and safety, venue, catering, and equipment for the event."
+  },
+  {
+    "image": "/committee/Maria-Dascalescu.webp",
+    "name": "Maria Dascalescu",
+    "role": "Experience Officer",
+    "roleDescription": "Ensures the event is accessible, engaging, and a positive experience for all participants through running challenges, workshops, and welfare activities."
+  },
+  {
+    "image": "/committee/William-Winterflood.webp",
+    "name": "William Winterflood",
+    "role": "Sponsorship Officer",
+    "roleDescription": "Responsible for securing sponsorships for the event and managing relationships with sponsor representatives."
+  },
+  {
+    "image": "/committee/Lizzy-Perry.webp",
+    "name": "Lizzy Perry",
+    "role": "Design and Marketing Officer",
+    "roleDescription": "Oversees all branding and creative assets such as promotional materials, social media posts, and merchandise."
+  },
+  {
+    "image": "/committee/Iva-Ristic.webp",
+    "name": "Iva Ristic",
+    "role": "Communications Officer",
+    "roleDescription": "Responsible for ensuring participants, volunteers and the wider hackathon community are provided with all necessary information at all times."
+  }
+]
