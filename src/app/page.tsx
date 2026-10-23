@@ -11,6 +11,9 @@ export default function Page() {
           height={925}
         />
         <h1 className="text-header-lg font-bold">COMING SOON!!</h1>
+        <h6 className="text-header-md font-bold mt-6">
+          January 30th to January 31st
+        </h6>
         <h6 className="text-header-md font-bold mt-6">Stay tuned.</h6>
       </div>
     </div>
