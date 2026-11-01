@@ -89,7 +89,7 @@ const FAQItemList: FAQItem[] = [
           href="https://www.instagram.com/luu_leedshack?mdxt=MXJhY2dkNjI2b2Vrcw=="
           className="text-right underline underline-offset-2 decoration-2 decoration-leeds-hack-2027-primary-500"
         >
-          @luu_leedshack
+          @socs_leedshack
         </Link>{" "}
         and{" "}
         <Link
@@ -112,7 +112,7 @@ const FAQItemList: FAQItem[] = [
           href="https://www.instagram.com/luu_leedshack?mdxt=MXJhY2dkNjI2b2Vrcw=="
           className="text-right underline underline-offset-2 decoration-2 decoration-leeds-hack-2027-primary-500"
         >
-          @luu_leedshack
+          @socs_leedshack
         </Link>{" "}
         and{" "}
         <Link
@@ -135,7 +135,7 @@ const FAQItemList: FAQItem[] = [
           href="https://www.instagram.com/luu_leedshack?mdxt=MXJhY2dkNjI2b2Vrcw=="
           className="text-right underline underline-offset-2 decoration-2 decoration-leeds-hack-2027-primary-500"
         >
-          @luu_leedshack
+          @socs_leedshack
         </Link>{" "}
         and{" "}
         <Link
