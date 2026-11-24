@@ -43,14 +43,15 @@ export default function RootLayout({
           <Header></Header>
           <a
             className="block w-12 min-[48rem]:w-24 fixed right-6 min-[48rem]:right-12 top-0 z-50"
-            href="https://mlh.io/eu?utm_source=eu-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=black"
+            href="https://www.mlh.com/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2027-season&utm_content=white"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <img
               className="w-full"
-              src="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-white.svg"
-              alt="Major League Hacking 2026 Hackathon Season"
-            ></img>
+              src="https://logged-assets.s3.amazonaws.com/trust-badge/2027/mlh-trust-badge-2027-white.svg"
+              alt="Major League Hacking 2027 Hackathon Season"
+            />
           </a>
           <div className="min-h-[100vh] flex flex-col">
             <div className="pt-14 grow flex flex-col">{children}</div>

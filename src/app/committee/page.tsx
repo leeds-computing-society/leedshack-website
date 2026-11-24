@@ -19,7 +19,7 @@ export default function Page() {
         </div>
 
         <div className="flex flex-row mb-12">
-          <div className="shrink-0 min-[48rem]:w-6 min-[96rem]:w-48 border-t border-b border-dashed border-white/50"></div>
+          <div className="shrink-0 min-[48rem]:w-6 min-[96rem]:w-48"></div>
           {leads.length === 0 ? (
             <div className="grow text-sm min-[48rem]:text-md p-6 border border-white/50">
               Uh oh.. did someone delete the DB.
@@ -31,13 +31,13 @@ export default function Page() {
               ))}
             </div>
           )}
-          <div className="shrink-0 min-[48rem]:w-6 min-[96rem]:w-48 border-t border-b border-dashed border-white/50"></div>
+          <div className="shrink-0 min-[48rem]:w-6 min-[96rem]:w-48"></div>
         </div>
         <div className="py-3 px-6 min-[96rem]:px-48 mt-12 text-lg min-[48rem]:text-xl border-t border-b border-white/50 bg-white/10">
           General Committee
         </div>
         <div className="flex flex-row mb-12">
-          <div className="shrink-0 min-[48rem]:w-6 min-[96rem]:w-48 border-t border-b border-dashed border-white/50"></div>
+          <div className="shrink-0 min-[48rem]:w-6 min-[96rem]:w-48"></div>
           {general.length === 0 ? (
             <div className="grow text-sm min-[48rem]:text-md p-6 border border-white/50">
               Uh oh.. did someone delete the DB.
@@ -56,7 +56,7 @@ export default function Page() {
           Previous Committee
         </div>
         <div className="flex flex-row mb-12">
-          <div className="shrink-0 min-[48rem]:w-6 min-[96rem]:w-48 border-t border-b border-dashed border-white/50"></div>
+          <div className="shrink-0 min-[48rem]:w-6 min-[96rem]:w-48"></div>
           {previous.length === 0 ? (
             <div className="grow text-sm min-[48rem]:text-md p-6 border border-white/50">
               Uh oh.. did someone delete the DB.
@@ -68,7 +68,7 @@ export default function Page() {
               ))}
             </div>
           )}
-          <div className="shrink-0 min-[48rem]:w-6 min-[96rem]:w-48 border-t border-b border-dashed border-white/50"></div>
+          <div className="shrink-0 min-[48rem]:w-6 min-[96rem]:w-48"></div>
         </div>
       </div>
     </div>
